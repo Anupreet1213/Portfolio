@@ -2,7 +2,14 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div>
+    <div id="experience">
+       <div id="stars-group-1"></div>
+      <div id="stars-group-2"></div>
+      <div id="stars-group-3"></div>
+      <p className="projectsHeading">
+        Experience and Achievements
+      </p>
+
       <div class="wrapper">
         <div class="center-line">
           <a href="#" class="scroll-icon">

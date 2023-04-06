@@ -3,9 +3,7 @@ import React from "react";
 const Skills = () => {
   return (
     <section class="techStack" data-aos="fade-down" data-aos-duration="2000">
-      <div id="stars-group-1"></div>
-      <div id="stars-group-2"></div>
-      <div id="stars-group-3"></div>
+     
       <p class="techStackHeading">Skills and Technologies</p>
       <div class="techStackWrapperDiv">
         <div class="techStackDiv">

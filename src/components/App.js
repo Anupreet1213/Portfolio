@@ -16,8 +16,8 @@ function App() {
           isLightTheme={isLightTheme}
           setIsLightTheme={setIsLightTheme}
         />
-        <Skills />
         <Projects />
+        <Skills />
         <Experience />
       </div>
     </>
