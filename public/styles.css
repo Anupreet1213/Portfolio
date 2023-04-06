@@ -224,7 +224,9 @@ body {
 /* <--------------------------------------------Projects Section------------------------------------------> */
 
 #projects {
-  padding: 5%;
+  padding: 5% 10%;
+  font-family: "Chakra Petch",sans-serif;
+  /* background-color: #54e5ff; */
 }
 .projectsHeading {
   font-size: 3rem;
@@ -338,7 +340,8 @@ body {
   display: flex;
   align-items: flex-end;
   border-radius: 9px;
-  height: 400px;
+  height: 350px;
+  
   break-inside: avoid;
 }
 
@@ -429,9 +432,9 @@ div.content__slate {
   animation-duration: 1s;
   animation-name: fadeInUp;
   animation-fill-mode: both;
-  column-gap: 1.5em;
+  column-gap: 2.5em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 @keyframes fadeInUp {
@@ -462,8 +465,9 @@ div.content__slate {
   position: absolute;
   left: 0 !important;
   top: 0 !important;
-  object-fit: cover;
-  /* background-size: cover; */
+  /* object-fit: cover; */
+  background-size: cover;
+  
 }
 
 /* ********Left wala dibbaa************** */

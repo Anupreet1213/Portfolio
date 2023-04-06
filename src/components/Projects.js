@@ -38,7 +38,7 @@ const Projects = () => {
                 <p>{data.description}</p>
                 <p class="d-flex flex-wrap">
                   {data.technologies.map((tech) => (
-                    <span class="d-block mb-1">{tech}</span>
+                    <span style={{"margin": "2px"}} class="d-block mb-1">{tech}</span>
                   ))}
                 </p>
               </div>

@@ -89,7 +89,7 @@ const SideBar = ({
 
                 <div className="main__post">
                   <h3 className="mt-4">{data.title}</h3>
-                  <p className="te mb-4">{data.description}</p>
+                  <p style={{'paddingBottom': '3%'}} className="te mb-4">{data.description}</p>
                   <img src={data.imageUrl} />
                   <h4>About</h4>
                   <p>{data.about}</p>
@@ -97,7 +97,7 @@ const SideBar = ({
                   {data.technologies && (
                     <p className="d-flex flex-wrap">
                       {data.technologies.map((tech, index) => (
-                        <span key={index} className="b-block mb-1">
+                        <span style={{"fontSize":"15px","backgroundColor":"rgb(105, 104, 105)","color":"#fff","margin":"2px"}} key={index} className="b-block mb-1">
                           {tech}
                         </span>
                       ))}
@@ -237,6 +237,7 @@ const Wrapper = styled.div`
       animation-name: fadeLeft;
       animation-duration: 0.5s;
       animation-fill-mode: both;
+      padding:0;
     }
     .header {
       margin-bottom: 2rem;
@@ -296,10 +297,12 @@ const Wrapper = styled.div`
   }
   .main__post {
     h3 {
-      font-size: calc(var(--font-x-md) - 6px);
+      font-size: 1.8rem;
       /* margin-bottom: 1.3rem; */
       color: var(--cw);
       font-weight: 800;
+      padding-bottom: 2%;
+      
     }
     h4 {
       font-size: var(--font-md);
@@ -335,10 +338,11 @@ const Wrapper = styled.div`
     }
     img {
       width: 100%;
-      height: 300px;
-      object-fit: cover;
+      height: 250px;
+      // object-fit: cover;
       background-size: cover;
       border-radius: 11px;
+      // background-size: 100% 100%;
     }
   }
 `;
