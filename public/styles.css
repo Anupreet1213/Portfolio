@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+
+:root {
+  --color-darkM-homepage-light: hsla(200deg, 100%, 85%, 0);
+  --color-darkM-homepage-dark: hsla(200deg, 100%, 85%, 0.1);
+  --color-lightM-homepage-light: hsl(204deg, 67%, 85%);
+  --color-lightM-homepage-dark: hsl(203, 100%, 50%);
+  --color-background: hsl(210deg, 30%, 8%);
+  --color-background-light: hsl(0deg, 0%, 100%);
+}
+
+/* html {
+  background-color: var(--color-background);
+} */
+
+body {
+  background-color: var(--color-background);
+}
+
+.lightModeBody {
+  background-color: var(--color-background-light);
+}
+.lightModeTop {
+  background: linear-gradient(
+    0deg,
+    var(--color-lightM-homepage-dark),
+    var(--color-lightM-homepage-light)
+  );
+  /* background-color: blue; */
+  height: 70vh;
+  position: relative;
+}
+.lightModeSvg {
+  fill: white;
+}
+
+.navbarLight {
+  color: black;
+  position: absolute;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  top: 15%;
+  right: 20%;
+  width: 65vw;
+  align-items: center;
+  /* font-size: 28px; */
+}
+.sittingBoyLight {
+  position: absolute;
+  width: 10%;
+  bottom: 17%;
+  right: 20%;
+  opacity: 1;
+  filter: brightness(1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* <--------------------------------------------Top Section------------------------------------------> */
+
+.top {
+  background: linear-gradient(
+    0deg,
+    var(--color-darkM-homepage-dark),
+    var(--color-darkM-homepage-light)
+  );
+  height: 70vh;
+  position: relative;
+}
+
+.svgClass {
+  position: absolute;
+  bottom: 0px;
+}
+
+.sittingBoy {
+  position: absolute;
+  width: 10%;
+  bottom: 17%;
+  right: 20%;
+  opacity: 1;
+  filter: brightness(0.6);
+}
+
+.navbar {
+  position: absolute;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  top: 15%;
+  right: 20%;
+  width: 65vw;
+  align-items: center;
+}
+.name {
+  color: #617bff;
+  flex: 0.2;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 4%;
+  flex: 0.7;
+}
+.icons {
+  display: flex;
+  gap: 30%;
+  flex: 0.1;
+}
+
+/* <--------------------------------------------About Me Section------------------------------------------> */
+.aboutMeHeading {
+  /* color: #C60C62; */
+  color: hsl(203, 100%, 50%);
+  font-family: "Chakra Petch", sans-serif;
+}
+
+#aboutMe {
+  display: flex;
+  padding: 0% 10%;
+  padding-bottom: 2%;
+  gap: 8%;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.leftImage {
+  width: 30vw;
+  flex: 0.5;
+  opacity: 0.7;
+}
+.leftImageDull {
+  width: 30vw;
+  flex: 0.5;
+  opacity: 1;
+}
+
+.rightDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  padding-top: 5%;
+}
+.rightHeading {
+  font-size: 2rem;
+  color: #4e6bff;
+  font-weight: 500;
+}
+
+.rightSubDescription {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+.rightSubDescription-dark {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+/* <--------------------------------------------Tech Stack Section------------------------------------------> */
+
+.techStack {
+  padding: 3% 12%;
+  font-family: "Chakra Petch", sans-serif;
+  /* background-color: #40B1D8; */
+  /* background-color: #0093E9; */
+  /* background-color: #19222A; */
+
+  background-image: linear-gradient(160deg, #1e9ce6 0%, #80d0c7 100%);
+}
+
+.techStackHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.techStackWrapperDiv {
+  font-family: "Chakra Petch", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  padding: 2%;
+  /* background-color: rgb(159, 215, 255); */
+  /* From https://css.glass */
+  /* background-color: #617bff; */
+  background: rgba(2, 51, 60, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(194, 56, 56, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.techStackDiv {
+  margin: 1%;
+  padding: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(204, 97%, 14%);
+  width: 15%;
+  justify-content: center;
+  /* text-align: center; */
+  /* gap: 1rem; */
+  align-items: center;
+  border-radius: 10px;
+}
+
+.techStackIcons {
+  width: 3rem;
+  margin-bottom: 5px;
+}
+.techStackDivText {
+  color: white;
+}
+
+/* <--------------------------------------------Projects Section------------------------------------------> */
+
+#projects {
+  padding: 5%;
+}
+.projectsHeading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+/* <--------------------------------------------Background Stars------------------------------------------> */
+
+#stars-group-1 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 874px 305px #fff, 290px 491px #fff, 31px 238px #fff,
+    397px 108px #fff, 529px 313px #fff, 278px 388px #fff, 267px 3px #fff,
+    1033px 367px #fff, 1783px 241px #fff, 792px 341px #fff, 328px 378px #fff,
+    522px 187px #fff, 402px 332px #fff, 18px 441px #fff, 1086px 298px #fff,
+    208px 273px #fff, 19px 251px #fff, 1583px 46px #fff, 957px 214px #fff,
+    121px 119px #fff, 911px 98px #fff, 367px 282px #fff, 135px 263px #fff,
+    774px 200px #fff;
+  animation-name: glowing-stars;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+#stars-group-2 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 513px 392px #fff, 90px 299px #fff, 300px 27px #fff, 2px 255px #fff,
+    67px 359px #fff, 1px 99px #fff, 36px 254px #fff, 214px 179px #fff,
+    357px 208px #fff, 658px 292px #fff, 505px 350px #fff, 746px 279px #fff,
+    577px 340px #fff, 521px 197px #fff, 174px 387px #fff, 41px 318px #fff,
+    238px 304px #fff, 1096px 199px #fff, 1138px 396px #fff, 427px 289px #fff,
+    282px 88px #fff, 1416px 70px #fff, 318px 132px #fff, 1161px 197px #fff,
+    499px 348px #fff, 417px 200px #fff, 301px 247px #fff, 1450px 339px #fff,
+    1177px 281px #fff, 417px 378px #fff, 932px 186px #fff, 22px 186px #fff,
+    988px 283px #fff, 1285px 356px #fff, 211px 183px #fff, 324px 355px #fff,
+    1105px 375px #fff, 1280px 349px #fff, 619px 112px #fff, 92px 221px #fff,
+    1305px 243px #fff, 475px 202px #fff, 1555px 95px #fff, 1021px 150px #fff,
+    1572px 36px #fff, 295px 347px #fff, 722px 134px #fff, 609px 187px #fff,
+    818px 211px #fff, 1243px 365px #fff, 1516px 211px #fff, 1615px 195px #fff,
+    1615px 187px #fff, 1622px 184px #fff, 1279px 394px #fff, 857px 201px #fff,
+    1481px 301px #fff, 1253px 267px #fff, 985px 368px #fff, 420px 161px #fff,
+    1728px 313px #fff, 1230px 158px #fff, 42px 161px #fff, 1662px 85px #fff,
+    931px 192px #fff, 1031px 317px #fff, 926px 316px #fff, 1685px 185px #fff,
+    365px 326px #fff, 735px 223px #fff, 377px 366px #fff, 305px 277px #fff,
+    666px 129px #fff, 64px 175px #fff, 1185px 175px #fff, 1072px 222px #fff,
+    307px 259px #fff, 686px 270px #fff, 1137px 327px;
+
+  animation-name: glowing-stars;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+
+  animation-delay: 0.2s;
+}
+#stars-group-3 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 1034px 211px #fff, 1152px 44px #fff, 1446px 399px #fff,
+    470px 262px #fff, 1484px 353px #fff, 841px 372px #fff, 1200px 348px #fff,
+    743px 330px #fff, 1199px 295px #fff, 1057px 246px #fff, 1379px 20px #fff,
+    763px 270px #fff, 924px 400px #fff, 800px 141px #fff, 1402px 65px #fff,
+    1253px 216px #fff, 1197px 183px #fff, 979px 60px #fff, 1315px 380px #fff,
+    1034px 83px #fff, 671px 141px #fff, 1351px 165px #fff, 1450px 212px #fff,
+    33px 52px #fff, 556px 232px #fff, 1465px 10px #fff, 789px 28px #fff,
+    582px 244px #fff, 1173px 305px #fff, 202px 154px #fff, 1125px 378px #fff,
+    1272px 26px #fff, 1014px 121px #fff, 377px 277px #fff, 808px 129px #fff,
+    1460px 285px #fff, 532px 343px #fff, 439px 193px #fff, 703px 214px #fff,
+    222px 372px #fff;
+  animation-name: glowing-stars;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-delay: 0.2s;
+}
+@keyframes glowing-stars {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
