@@ -3,6 +3,7 @@ import AboutMe from "./AboutMe";
 import Top from "./Top";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Experience from "./Experience";
 
 function App() {
   const [isLightTheme, setIsLightTheme] = useState(false);
@@ -17,6 +18,7 @@ function App() {
         />
         <Skills />
         <Projects />
+        <Experience />
       </div>
     </>
   );
