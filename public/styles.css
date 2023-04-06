@@ -11,6 +11,10 @@
   --bg: #fffdfc;
 }
 
+* ::-webkit-scrollbar {
+  display: none;
+}
+
 /* html {
   background-color: var(--color-background);
 } */
@@ -166,7 +170,7 @@ body {
 .techStack {
   position: sticky;
   top:0;
-  padding: 3% 12%;
+  padding: 5% 12%;
   font-family: "Chakra Petch", sans-serif;
   /* background-color: #40B1D8; */
   /* background-color: #0093E9; */
@@ -627,3 +631,10 @@ div.content__slate {
     margin: 10px 0;
   }
 }
+
+
+
+/* .contactMe{
+ position: sticky;
+ top:0;
+} */

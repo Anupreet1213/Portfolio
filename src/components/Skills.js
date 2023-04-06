@@ -39,20 +39,20 @@ const Skills = () => {
           <p class="techStackDivText">C++</p>
         </div>
         <div class="techStackDiv">
-          <img src="images/html-5.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">HTML5</p>
+          <img src="images/firebase.png" alt="html" class="techStackIcons" />
+          <p class="techStackDivText">Firebase</p>
         </div>
         <div class="techStackDiv">
-          <img src="images/html-5.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">HTML5</p>
+          <img src="images/mongodb.png" alt="html" class="techStackIcons" />
+          <p class="techStackDivText">MongoDB</p>
         </div>
         <div class="techStackDiv">
-          <img src="images/html-5.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">HTML5</p>
+          <img src="images/ts.png" alt="html" class="techStackIcons" />
+          <p class="techStackDivText">TypeScript</p>
         </div>
         <div class="techStackDiv">
-          <img src="images/html-5.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">HTML5</p>
+          <img src="images/redux.png" alt="html" class="techStackIcons" />
+          <p class="techStackDivText">Redux</p>
         </div>
       </div>
     </section>

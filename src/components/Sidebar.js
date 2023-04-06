@@ -258,6 +258,12 @@ const Wrapper = styled.div`
       }
     }
     .pos__relative {
+      background: linear-gradient(
+        0deg,
+        var(--color-lightM-homepage-dark),
+        var(--color-lightM-homepage-light)
+      );
+      
       position: relative;
       padding: 2rem 2rem 4rem;
       overflow-x: overlay;
