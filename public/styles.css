@@ -7,6 +7,7 @@
   --color-lightM-homepage-dark: hsl(203, 100%, 50%);
   --color-background: hsl(210deg, 30%, 8%);
   --color-background-light: hsl(0deg, 0%, 100%);
+  --button-index: #f4f1ee;
 }
 
 /* html {
@@ -319,4 +320,115 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+/* -----------------------------------Projects---------------------------------------- */
+
+.dFqYWZ {
+  margin: 0px 0px 1.5em;
+  position: relative;
+  cursor: pointer;
+  object-fit: cover;
+  background-color: var(--button-index);
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 9px;
+  height: 400px;
+  break-inside: avoid;
+}
+
+.dFqYWZ:hover::after {
+  opacity: 1;
+}
+
+.dFqYWZ:hover::before {
+  opacity: 1;
+}
+
+div.content__slate {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s;
+}
+
+.dFqYWZ:hover div.content__slate,
+.dFqYWZ:focus div.content__slate {
+  z-index: 999;
+  transform: none;
+  opacity: 1;
+}
+
+/* .dFqYWZ:hover {
+  cursor: none;
+} */
+
+.dFqYWZ::before {
+  content: "";
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  inset: 0px;
+  z-index: -1;
+  background: radial-gradient(
+    circle at center center,
+    white 10%,
+    whitesmoke 11%,
+    whitesmoke 100%
+  );
+}
+
+.dFqYWZ::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  inset: 0px;
+  opacity: 0.3;
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 80%);
+}
+
+.dFqYWZ h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.6em;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+}
+
+.dFqYWZ p {
+  font-size: calc(0.8em + 0.9px);
+  color: rgb(213, 213, 213) !important;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.dFqYWZ p span {
+  background: rgb(105, 104, 105);
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 11px;
+  margin-right: 6px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.jwbuPS {
+  margin: 1.5em 0px;
+  animation-duration: 1s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  column-gap: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
