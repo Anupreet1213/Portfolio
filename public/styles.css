@@ -537,10 +537,11 @@ div.content__slate {
   margin: 50px auto;
   padding: 0 20px;
   position: relative;
+  padding-bottom: 15%;
 }
 .wrapper .center-line {
   position: absolute;
-  height: 100%;
+  height: 90%;
   width: 4px;
   background: #000000;
   left: 50%;
@@ -662,7 +663,8 @@ div.content__slate {
 }
 
 .contactMe {
-  background-color: rgb(0, 255, 255);
+  background-color: #7dcbfe; 
+  /* background-color: #101111;  */
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -695,7 +697,9 @@ div.content__slate {
   border-radius: 30px;
   background-color: #1a242c;
   border: 2px solid aqua;
-  /* align-items: center; */
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 .letsDoThisButton:hover {
   background-color: aqua;
@@ -704,6 +708,7 @@ div.content__slate {
 
 .contactMeDescription {
   font-size: 1.6rem;
+  /* color:white; */
   width: 25%;
   text-align: center;
   padding: 1%;
