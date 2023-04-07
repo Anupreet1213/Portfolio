@@ -11,8 +11,18 @@
   --bg: #fffdfc;
 }
 
-* ::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  background: hsl(187, 92%, 64%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(199, 88%, 38%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(199, 93%, 29%);
 }
 
 /* html {
@@ -168,8 +178,8 @@
 /* <--------------------------------------------Tech Stack Section------------------------------------------> */
 
 .techStack {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   padding: 5% 12%;
   font-family: "Chakra Petch", sans-serif;
   /* background-color: #40B1D8; */
@@ -499,8 +509,8 @@ div.content__slate {
 /* ---------------------------------Exp--------------------------- */
 
 #experience {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   padding: 5%;
   color: black;
   background: linear-gradient(
@@ -651,7 +661,79 @@ div.content__slate {
   }
 }
 
-/* .contactMe{
- position: sticky;
- top:0;
-} */
+.contactMe {
+  background-color: rgb(0, 255, 255);
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Chakra Petch", sans-serif;
+  align-items: center;
+}
+.contactMeUpDiv {
+  color: white;
+  position: relative;
+  bottom: 15%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(29, 29, 37);
+  border-radius: 20px;
+  width: 80%;
+  padding: 3%;
+}
+.startAProject {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.startAProjectDescription {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.letsDoThisButton {
+  padding: 1% 2%;
+  border-radius: 30px;
+  background-color: #1a242c;
+  border: 2px solid aqua;
+  /* align-items: center; */
+}
+.letsDoThisButton:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.contactMeDescription {
+  font-size: 1.6rem;
+  width: 25%;
+  text-align: center;
+  padding: 1%;
+}
+
+.socialLinks {
+  /* background-color: red; */
+  /* height: 10vh; */
+  width: 30%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+.socialLinkDiv {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 3%;
+}
+.socialLinkDiv:hover {
+  background-color: #fff;
+  color: #4e6bff;
+}
+.links:hover {
+  color: #4e6bff;
+}
+.links {
+  font-size: 1.5rem;
+}
+
+.handcraftedBy {
+  padding: 2%;
+}
