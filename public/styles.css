@@ -112,6 +112,7 @@
   align-items: center;
   /* font-size: 28px; */
 }
+
 .name {
   color: #617bff;
   flex: 0.2;
@@ -122,11 +123,37 @@
   gap: 4%;
   flex: 0.7;
 }
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  #toggleLight {
+    display: none;
+  }
+  #toggleSound {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #navbar {
+    top: 2%;
+    right: 0;
+    width: 98vw;
+    justify-content: space-between;
+  }
+}
 .icons {
   display: flex;
   gap: 30%;
   flex: 0.1;
 }
+
+/* -------------------------top mein hi burger wala nav----------------------------- */
+
+/* .hamburgerMenu {
+  
+} */
 
 /* <--------------------------------------------About Me Section------------------------------------------> */
 .aboutMeHeading {
@@ -521,8 +548,8 @@ div.content__slate {
 }
 
 #experienceDark {
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   padding: 5%;
   background-color: #1a242c;
   color: #4e6bff;
@@ -661,23 +688,29 @@ div.content__slate {
   }
 }
 
+/* ------------------------------Contact Me---------------------------------- */
+
 .contactMe {
   background-color: rgb(0, 255, 255);
-  height: 60vh;
+  /* height: 60vh; */
   display: flex;
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
   align-items: center;
+  position: relative;
+  padding-top: 7%;
 }
 .contactMeUpDiv {
   color: white;
-  position: relative;
-  bottom: 15%;
+  position: absolute;
+  top: -25%;
+  /* margin-bottom: 40%; */
+  /* bottom: 55%; */
   display: flex;
   justify-content: space-around;
   background-color: rgb(29, 29, 37);
   border-radius: 20px;
-  width: 80%;
+  /* width: 80%; */
   padding: 3%;
 }
 .startAProject {
@@ -691,11 +724,13 @@ div.content__slate {
 }
 
 .letsDoThisButton {
-  padding: 1% 2%;
+  padding: 0.6% 1%;
   border-radius: 30px;
   background-color: #1a242c;
   border: 2px solid aqua;
-  /* align-items: center; */
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .letsDoThisButton:hover {
   background-color: aqua;
@@ -726,6 +761,7 @@ div.content__slate {
 .socialLinkDiv:hover {
   background-color: #fff;
   color: #4e6bff;
+  cursor: pointer;
 }
 .links:hover {
   color: #4e6bff;

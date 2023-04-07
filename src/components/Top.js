@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { HamburgerMenu } from "./HamBurgerMenu";
 
 const Top = ({ isLightTheme, setIsLightTheme }) => {
   const handleTheme = () => {
@@ -12,7 +13,8 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
       <div id="stars-group-1"></div>
       <div id="stars-group-2"></div>
       <div id="stars-group-3"></div>
-      <nav className={isLightTheme ? "navbarLight" : "navbar"}>
+
+      <nav className={isLightTheme ? "navbarLight" : "navbar"} id="navbar">
         <h2 class="name">Aman Ap</h2>
         <div class="navbar-links">
           <p>Projects</p>
@@ -21,6 +23,11 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
           <p>Socials</p>
         </div>
         <div class="icons">
+          <HamburgerMenu
+            className="hamburgerMenu"
+            isLightTheme={isLightTheme}
+            setIsLightTheme={setIsLightTheme}
+          />
           <i
             id="toggleLight"
             className={
@@ -31,7 +38,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
             onClick={handleTheme}
           ></i>
 
-          <i class="fa-solid fa-volume-high"></i>
+          <i id="toggleSound" class="fa-solid fa-volume-high"></i>
         </div>
       </nav>
       <svg viewBox="0 0 1340 319" className="svgClass">

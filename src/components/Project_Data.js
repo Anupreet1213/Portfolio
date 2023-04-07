@@ -8,7 +8,13 @@ const PROJECTS_DATA = [
     imageUrl: "../images/CEmissionImage.png",
     github: "",
     type: ["project", "open-source", "tools"],
-    technologies: ["React", "Machine Learning", "Firestore Database","User Authentication System","Random Forest"],
+    technologies: [
+      "React",
+      "Machine Learning",
+      "Firestore Database",
+      "User Authentication System",
+      "Random Forest",
+    ],
   },
   {
     title: "Profile Picker",
@@ -19,7 +25,14 @@ const PROJECTS_DATA = [
     imageUrl: "../images/Profile-Picker.png",
     github: "",
     type: ["project", "open-source", "tools"],
-    technologies: ["HTML", "CSS", "Javascript", "Machine Learning", "Cohere API", "Semantic Search"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Machine Learning",
+      "Cohere API",
+      "Semantic Search",
+    ],
   },
   {
     title: "My Music",
@@ -36,7 +49,7 @@ const PROJECTS_DATA = [
     title: "Invoicer",
     description: "Create simple and beautiful invoices",
     about:
-      "Invoicer creates beautiful invoices according to the need of client. React based powerful UI not only provied dynamic functionalities but also provies easy to use experience to the client.",
+      "Invoicer creates beautiful invoices according to the need of client. React based powerful UI not only provides dynamic functionalities but also provides easy to use experience to the client.",
     link: "",
     imageUrl: "../images/Invoicer.png",
     github: "",
@@ -45,7 +58,8 @@ const PROJECTS_DATA = [
   },
   {
     title: "Interior Design",
-    description: "Website made for an interior designing firm for a trial purpose.",
+    description:
+      "Website made for an interior designing firm for a trial purpose.",
     about:
       "The website uses React to showcase User Interface. The firm aims to provide quality interior design solutions to client for their homes, offices, restaurants etc. The website is currently in Desktop view mode only (trial purposes).",
     link: "https://amanapt.github.io/InteriorDesign/",
