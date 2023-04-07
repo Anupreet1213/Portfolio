@@ -1,58 +1,75 @@
 import React from "react";
 
-const Skills = () => {
+const Skills = ({ isLightTheme }) => {
   return (
-    <section class="techStack" data-aos="fade-down" data-aos-duration="2000">
-     
-      <p class="techStackHeading">Skills and Technologies</p>
-      <div class="techStackWrapperDiv">
-        <div class="techStackDiv">
-          <img src="images/html-5.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">HTML5</p>
+    <section
+      className="techStack"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+    >
+      <p className={isLightTheme ? "techStackHeading" : "techStackHeadingDark"}>
+        Skills and Technologies
+      </p>
+      <div className="techStackWrapperDiv">
+        <div className="techStackDiv">
+          <img src="images/html-5.png" alt="html" className="techStackIcons" />
+          <p className="techStackDivText">HTML5</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/css-3.png" alt="css" class="techStackIcons" />
-          <p class="techStackDivText">CSS</p>
+        <div className="techStackDiv">
+          <img src="images/css-3.png" alt="css" className="techStackIcons" />
+          <p className="techStackDivText">CSS</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/js.png" alt="js" class="techStackIcons" />
-          <p class="techStackDivText">JavaScript</p>
+        <div className="techStackDiv">
+          <img src="images/js.png" alt="js" className="techStackIcons" />
+          <p className="techStackDivText">JavaScript</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/science.png" alt="React" class="techStackIcons" />
-          <p class="techStackDivText">React</p>
+        <div className="techStackDiv">
+          <img
+            src="images/science.png"
+            alt="React"
+            className="techStackIcons"
+          />
+          <p className="techStackDivText">React</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/node-js.png" alt="Node" class="techStackIcons" />
-          <p class="techStackDivText">Node JS</p>
+        <div className="techStackDiv">
+          <img src="images/node-js.png" alt="Node" className="techStackIcons" />
+          <p className="techStackDivText">Node JS</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/github.png" alt="Github" class="techStackIcons" />
-          <p class="techStackDivText">Github</p>
+        <div className="techStackDiv">
+          <img
+            src="images/github.png"
+            alt="Github"
+            className="techStackIcons"
+          />
+          <p className="techStackDivText">Github</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/java.png" alt="Java" class="techStackIcons" />
-          <p class="techStackDivText">Java</p>
+        <div className="techStackDiv">
+          <img src="images/java.png" alt="Java" className="techStackIcons" />
+          <p className="techStackDivText">Java</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/c-.png" alt="C" class="techStackIcons" />
-          <p class="techStackDivText">C++</p>
+        <div className="techStackDiv">
+          <img src="images/c-.png" alt="C" className="techStackIcons" />
+          <p className="techStackDivText">C++</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/firebase.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">Firebase</p>
+        <div className="techStackDiv">
+          <img
+            src="images/firebase.png"
+            alt="html"
+            className="techStackIcons"
+          />
+          <p className="techStackDivText">Firebase</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/mongodb.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">MongoDB</p>
+        <div className="techStackDiv">
+          <img src="images/mongodb.png" alt="html" className="techStackIcons" />
+          <p className="techStackDivText">MongoDB</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/ts.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">TypeScript</p>
+        <div className="techStackDiv">
+          <img src="images/ts.png" alt="html" className="techStackIcons" />
+          <p className="techStackDivText">TypeScript</p>
         </div>
-        <div class="techStackDiv">
-          <img src="images/redux.png" alt="html" class="techStackIcons" />
-          <p class="techStackDivText">Redux</p>
+        <div className="techStackDiv">
+          <img src="images/redux.png" alt="html" className="techStackIcons" />
+          <p className="techStackDivText">Redux</p>
         </div>
       </div>
     </section>

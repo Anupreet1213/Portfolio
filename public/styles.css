@@ -19,38 +19,17 @@
   background-color: var(--color-background);
 } */
 
-body {
-  background-color: var(--color-background);
-}
-
-.lightModeBody {
+.body {
   background-color: var(--color-background-light);
 }
-.lightModeTop {
-  background: linear-gradient(
-    0deg,
-    var(--color-lightM-homepage-dark),
-    var(--color-lightM-homepage-light)
-  );
-  /* background-color: blue; */
-  height: 70vh;
-  position: relative;
+
+.darkModeBody {
+  background-color: var(--color-background);
 }
 .lightModeSvg {
   fill: white;
 }
 
-.navbarLight {
-  color: black;
-  position: absolute;
-  display: flex;
-  font-family: "Chakra Petch", sans-serif;
-  top: 15%;
-  right: 20%;
-  width: 65vw;
-  align-items: center;
-  /* font-size: 28px; */
-}
 .sittingBoyLight {
   position: absolute;
   width: 10%;
@@ -74,6 +53,16 @@ body {
     var(--color-darkM-homepage-dark),
     var(--color-darkM-homepage-light)
   );
+  height: 70vh;
+  position: relative;
+}
+.lightModeTop {
+  background: linear-gradient(
+    0deg,
+    var(--color-lightM-homepage-dark),
+    var(--color-lightM-homepage-light)
+  );
+  /* background-color: blue; */
   height: 70vh;
   position: relative;
 }
@@ -101,6 +90,17 @@ body {
   right: 20%;
   width: 65vw;
   align-items: center;
+}
+.navbarLight {
+  color: black;
+  position: absolute;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  top: 15%;
+  right: 20%;
+  width: 65vw;
+  align-items: center;
+  /* font-size: 28px; */
 }
 .name {
   color: #617bff;
@@ -169,7 +169,7 @@ body {
 
 .techStack {
   position: sticky;
-  top:0;
+  top: 0;
   padding: 5% 12%;
   font-family: "Chakra Petch", sans-serif;
   /* background-color: #40B1D8; */
@@ -186,21 +186,26 @@ body {
   margin-bottom: 2%;
 }
 
+.techStackHeadingDark {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2%;
+  color: #4e6bff;
+}
+
 .techStackWrapperDiv {
   font-family: "Chakra Petch", sans-serif;
   display: flex;
   flex-wrap: wrap;
   gap: 3%;
   padding: 2%;
-  /* background-color: rgb(159, 215, 255); */
-  /* From https://css.glass */
-  /* background-color: #617bff; */
-  background: rgba(2, 51, 60, 0.07);
+  background: rgba(4, 159, 255, 0.27);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(194, 56, 56, 0.1);
-  backdrop-filter: blur(12.3px);
-  -webkit-backdrop-filter: blur(12.3px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(4, 159, 255, 0.22);
 }
 
 .techStackDiv {
@@ -231,7 +236,7 @@ body {
 
 #projects {
   padding: 5% 10%;
-  font-family: "Chakra Petch",sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   /* background-color: #3AB1FB; */
   background: linear-gradient(
     0deg,
@@ -239,15 +244,21 @@ body {
     var(--color-lightM-homepage-light)
   );
 }
+
+#projectsDark {
+  padding: 5% 10%;
+  font-family: "Chakra Petch", sans-serif;
+  /* background-color: #3AB1FB; */
+  color: #4e6bff;
+  background-color: #1a242c;
+}
+
 .projectsHeading {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
 }
-
-
-
 
 /* <--------------------------------------------Background Stars------------------------------------------> */
 
@@ -355,7 +366,7 @@ body {
   align-items: flex-end;
   border-radius: 9px;
   height: 350px;
-  
+
   break-inside: avoid;
 }
 
@@ -481,22 +492,30 @@ div.content__slate {
   top: 0 !important;
   /* object-fit: cover; */
   background-size: cover;
-  
 }
 
 /* ********Left wala dibbaa************** */
 
 /* ---------------------------------Exp--------------------------- */
 
-#experience{
+#experience {
   position: sticky;
-  top:0;
+  top: 0;
   padding: 5%;
+  color: black;
   background: linear-gradient(
     0deg,
     var(--color-lightM-homepage-dark),
     var(--color-lightM-homepage-light)
   );
+}
+
+#experienceDark {
+  position: sticky;
+  top: 0;
+  padding: 5%;
+  background-color: #1a242c;
+  color: #4e6bff;
 }
 
 ::selection {
@@ -631,8 +650,6 @@ div.content__slate {
     margin: 10px 0;
   }
 }
-
-
 
 /* .contactMe{
  position: sticky;

@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const Experience = () => {
+const Experience = ({ isLightTheme }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  });
   return (
-    <div id="experience">
-       <div id="stars-group-1"></div>
+    <div id={isLightTheme ? "experience" : "experienceDark"}>
+      <div id="stars-group-1"></div>
       <div id="stars-group-2"></div>
       <div id="stars-group-3"></div>
-      <p className="projectsHeading">
-        Experience and Achievements
-      </p>
+      <p className="projectsHeading">Experience and Achievements</p>
 
       <div class="wrapper">
         <div class="center-line">
@@ -16,7 +25,7 @@ const Experience = () => {
             <i class="fas fa-caret-up"></i>
           </a>
         </div>
-        <div class="row row-1">
+        <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-home"></i>
             <div class="details">
@@ -34,7 +43,7 @@ const Experience = () => {
             </div>
           </section>
         </div>
-        <div class="row row-2">
+        <div data-aos="fade-down" class="row row-2">
           <section>
             <i class="icon fas fa-star"></i>
             <div class="details">
@@ -52,7 +61,7 @@ const Experience = () => {
             </div>
           </section>
         </div>
-        <div class="row row-1">
+        <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-rocket"></i>
             <div class="details">
@@ -70,7 +79,7 @@ const Experience = () => {
             </div>
           </section>
         </div>
-        <div class="row row-2">
+        <div data-aos="fade-down" class="row row-2">
           <section>
             <i class="icon fas fa-globe"></i>
             <div class="details">
@@ -88,7 +97,7 @@ const Experience = () => {
             </div>
           </section>
         </div>
-        <div class="row row-1">
+        <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-globe"></i>
             <div class="details">

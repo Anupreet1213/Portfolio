@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import SideBar from "./Sidebar";
 import PROJECTS_DATA from "./Project_Data";
 
-const Projects = () => {
+const Projects = ({ isLightTheme, setIsLightTheme }) => {
   //   const asideRef = useRef();
 
   //   const handleClick = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
   //   PROJECTS_DATA.map((data) => console.log(data.title));
 
   return (
-    <section id="projects">
+    <section id={isLightTheme ? "projects" : "projectsDark"}>
       <p class="projectsHeading">Projects</p>
       <div className="sc-gZMcBi jwbuPS">
         {PROJECTS_DATA.map((data) => (
@@ -38,14 +38,21 @@ const Projects = () => {
                 <p>{data.description}</p>
                 <p class="d-flex flex-wrap">
                   {data.technologies.map((tech) => (
-                    <span style={{"margin": "2px"}} class="d-block mb-1">{tech}</span>
+                    <span style={{ margin: "2px" }} class="d-block mb-1">
+                      {tech}
+                    </span>
                   ))}
                 </p>
               </div>
             </div>
           </>
         ))}
-        <SideBar setShow={setShow} show={show} data={projectData} />
+        <SideBar
+          setShow={setShow}
+          show={show}
+          data={projectData}
+          isLightTheme={isLightTheme}
+        />
       </div>
     </section>
   );
