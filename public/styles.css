@@ -291,11 +291,23 @@
 }
 
 .projectsHeading {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 2%;
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
 }
+.projectsHeading:hover{
+  color:#233dbf;
+}
+.projectsSubHeading{
+text-align: center;
+padding-bottom: 2%;
+/* width: 80%; */
+font-size: 1.5rem;
+}
+
+
 
 /* <--------------------------------------------Background Stars------------------------------------------> */
 
@@ -548,8 +560,8 @@ div.content__slate {
 }
 
 #experienceDark {
-  /* position: sticky;
-  top: 0; */
+  position: sticky;
+  top: 0;
   padding: 5%;
   background-color: #1a242c;
   color: #4e6bff;
@@ -689,6 +701,8 @@ div.content__slate {
   }
 }
 
+
+
 /* ------------------------------Contact Me---------------------------------- */
 
 .contactMe {
@@ -705,14 +719,17 @@ div.content__slate {
 .contactMeUpDiv {
   color: white;
   position: absolute;
-  top: -25%;
+  top: -20%;
+  /* Top is -25% in Anupriya's lappy */
+
   /* margin-bottom: 40%; */
   /* bottom: 55%; */
   display: flex;
   justify-content: space-around;
   background-color: rgb(29, 29, 37);
   border-radius: 20px;
-  /* width: 80%; */
+  width: 80%; 
+  /* Width is set to 80% in Aman's Lappy and is commented out in Anupriya's */
   padding: 3%;
 }
 .startAProject {
@@ -763,11 +780,11 @@ div.content__slate {
 }
 .socialLinkDiv:hover {
   background-color: #fff;
-  color: #4e6bff;
+  color: #7dcbfe;
   cursor: pointer;
 }
 .links:hover {
-  color: #4e6bff;
+  color: #7dcbfe;
 }
 .links {
   font-size: 1.5rem;
