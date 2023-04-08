@@ -17,13 +17,11 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
 
   return (
     <section id={isLightTheme ? "projects" : "projectsDark"}>
-      
       <p class="projectsHeading">Projects</p>
       <p class="projectsSubHeading">
-        I've used hundreds
-        of web and mobile apps in different industries and verticals.
-        Eventually, I decided that it would be a fun challenge to try designing
-        and building my own.
+        I've used hundreds of web and mobile apps in different industries and
+        verticals. Eventually, I decided that it would be a fun challenge to try
+        designing and building my own.
       </p>
       <div className="sc-gZMcBi jwbuPS">
         {PROJECTS_DATA.map((data) => (
@@ -36,6 +34,8 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
               onClick={() => {
                 setProjectData(data);
                 setShow(true);
+                const skills = document.getElementsByClassName("techStack")[0];
+                skills.style.opacity = "0";
               }}
               style={{ background: "url($`{data.imageUrl}`)" }}
             >

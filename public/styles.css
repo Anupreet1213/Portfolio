@@ -177,7 +177,6 @@
 }
 
 @media screen and (max-width: 870px) {
- 
   #aboutMe {
     gap: 4%;
     padding: 5% 4%;
@@ -201,14 +200,13 @@
   #rightHeading {
     font-size: 2rem;
   }
-  #rightSubDescription{
+  #rightSubDescription {
     font-size: 1.4rem;
   }
-  .leftImageDull{
+  .leftImageDull {
     width: 60vw !important;
   }
 }
-
 
 .rightDescription {
   display: flex;
@@ -234,10 +232,11 @@
 /* <--------------------------------------------Tech Stack Section------------------------------------------> */
 
 .techStack {
-  /* position: sticky;
-  top: 0; */
-  padding: 5% 12%;
+  /* position: relative; */
+  padding: 2% 12%;
   font-family: "Chakra Petch", sans-serif;
+  /* z-index: 0; */
+  /* z-index: 0; */
   /* background-color: #40B1D8; */
   /* background-color: #0093E9; */
   /* background-color: #19222A; */
@@ -262,27 +261,37 @@
 
 .techStackWrapperDiv {
   font-family: "Chakra Petch", sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3%;
-  padding: 2%;
+  /* height: 100vh; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2%;
+  row-gap: 5%;
+  /* width: 80%; */
+  /* gap: 3%; */
+  /* padding: 4% 3%; */
+  padding: 2% 2% 4.5% 2%;
   background: rgba(4, 159, 255, 0.27);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
   border: 1px solid rgba(4, 159, 255, 0.22);
+  /* z-index: -199999; */
 }
 
 .techStackDiv {
-  margin: 1%;
-  padding: 3%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  /* margin: 1%; */
+  /* padding: 3%; */
+  /* height: 20vh;
+  width: 10vw; */
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: flex;
   flex-direction: column;
   background-color: hsl(204, 97%, 14%);
-  width: 15%;
+  /* width: 75%; */
   justify-content: center;
   /* text-align: center; */
   /* gap: 1rem; */
@@ -296,6 +305,23 @@
 }
 .techStackDivText {
   color: white;
+}
+@media (max-width: 768px) {
+  .techStack {
+    padding: 5% 5%;
+  }
+  .techStackWrapperDiv {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20%;
+    padding-top: 8%;
+    /* padding: 10% 25% 30% 25%; */
+  }
+  .techStackIcons {
+    width: 2rem;
+  }
+  .techStackHeadingDark {
+    font-size: 2rem !important;
+  }
 }
 
 /* <--------------------------------------------Projects Section------------------------------------------> */
@@ -538,23 +564,21 @@ div.content__slate {
   grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width:580px){
-  .jwbuPS{
+@media screen and (max-width: 580px) {
+  .jwbuPS {
     grid-template-columns: 1fr;
   }
-.dFqYWZ{
-  height: 260px;
+  .dFqYWZ {
+    height: 260px;
+  }
+  .projectsHeading {
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+  }
+  .projectsSubHeading {
+    font-size: 1.4rem;
+  }
 }
-.projectsHeading{
-  font-size: 1.8rem;
-  margin-bottom: 2%;
-}
-.projectsSubHeading{
-  font-size: 1.4rem;
-}
-}
-
-
 
 @keyframes fadeInUp {
   0% {

@@ -62,8 +62,8 @@ const Experience = ({ isLightTheme }) => {
           </section>
         </div>
         <div id="stars-group-1"></div>
-      <div id="stars-group-2"></div>
-      <div id="stars-group-3"></div>
+        <div id="stars-group-2"></div>
+        <div id="stars-group-3"></div>
         <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-rocket"></i>

@@ -47,6 +47,15 @@ const SideBar = ({
       window.removeEventListener("keydown", handleKeyPress);
     };
   }, []);
+
+  // if (show === true) {
+  //   const skills = document.getElementById("techStack");
+  //   console.log("====================================");
+  //   console.log(skills);
+  //   console.log("====================================");
+  // } else {
+  //   // document.getElementById("techStack").setAttribute("style", "opacity:1");
+  // }
   return (
     <>
       {show && (
@@ -56,7 +65,11 @@ const SideBar = ({
             <Overlay
               overlayColor={overlayColor}
               className="overlay"
-              onClick={() => setShow(false)}
+              onClick={() => {
+                setShow(false);
+                const skills = document.getElementsByClassName("techStack")[0];
+                skills.style.opacity = "1";
+              }}
             />
             <aside className="fadeInLeft">
               <div
@@ -66,7 +79,12 @@ const SideBar = ({
               >
                 <div className="d-flex justify-content-between header">
                   <button
-                    onClick={() => setShow(false)}
+                    onClick={() => {
+                      setShow(false);
+                      const skills =
+                        document.getElementsByClassName("techStack")[0];
+                      skills.style.opacity = "1";
+                    }}
                     className="none-button"
                     type="button"
                   >
@@ -279,7 +297,7 @@ const Wrapper = styled.div`
         var(--color-lightM-homepage-dark),
         var(--color-lightM-homepage-light)
       );
-
+      ${"" /* z-index: 9999; */}
       position: relative;
       padding: 2rem 2rem 4rem;
       overflow-x: overlay;
