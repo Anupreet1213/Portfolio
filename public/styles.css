@@ -845,15 +845,17 @@ div.content__slate {
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
   align-items: center;
+  justify-content: center;
   position: relative;
   padding-top: 7%;
 }
-.contactMeDark{
+.contactMeDark {
   background-color: #0d1920;
   /* background-color: #101111;  */
-  height: 55vh;
+  /* height: 55vh; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: "Chakra Petch", sans-serif;
   align-items: center;
   position: relative;
@@ -903,14 +905,14 @@ div.content__slate {
 .contactMeDescription {
   font-size: 1.6rem;
   /* color:white; */
-  width: 25%;
+  /* width: 25%; */
   text-align: center;
   padding: 1%;
 }
-.contactMeDescriptionDark{
+.contactMeDescriptionDark {
   font-size: 1.6rem;
-  color:white;
-  width: 25%;
+  color: white;
+  /* width: 55%; */
   text-align: center;
   padding: 1%;
 }
@@ -931,10 +933,17 @@ div.content__slate {
     padding-top: 14%;
     width: 60%;
   }
+  .contactMeDescriptionDark {
+    padding-top: 14%;
+    width: 60%;
+  }
   .contactMe {
     /* height: 50vh; */
   }
   .socialLinkDiv {
+    margin: 5%;
+  }
+  .socialLinkDivDark {
     margin: 5%;
   }
 }
@@ -954,7 +963,7 @@ div.content__slate {
     padding: 5%;
   }
   .socialLinks {
-    width: 60% !important;
+    width: 60vw !important;
   }
   .contactMeDescription {
     padding-top: 18%;
@@ -965,11 +974,12 @@ div.content__slate {
 }
 
 .socialLinks {
-  /* width: 30%; */
+  width: 30vw;
   display: flex;
   color: white;
-  justify-content: space-between;
-  padding: 2% 5%;
+  justify-content: space-evenly;
+  margin: 2% 5%;
+  /* gap: 15%; */
 }
 .socialLinkDiv {
   border: 2px solid white;
@@ -977,22 +987,40 @@ div.content__slate {
   padding: 3%;
   color: white;
 }
+.socialLinkDivDark {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 3%;
+  color: white;
+}
+
 .socialLinkDiv:hover {
   background-color: #fff;
   color: #7dcbfe;
   cursor: pointer;
 }
+.socialLinkDivDark:hover {
+  background-color: #fff;
+  color: #0d1920;
+  cursor: pointer;
+}
 .links:hover {
   color: #7dcbfe;
 }
+.linksDark:hover {
+  color: #0d1920;
+}
 .links {
+  font-size: 1.5rem;
+}
+.linksDark {
   font-size: 1.5rem;
 }
 
 .handcraftedBy {
   padding: 2%;
 }
-.handcraftedByDark{
+.handcraftedByDark {
   padding: 2%;
   color: white;
 }
