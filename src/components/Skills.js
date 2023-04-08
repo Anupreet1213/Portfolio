@@ -70,6 +70,7 @@ const Skills = ({ isLightTheme }) => {
       className="techStack"
       data-aos="fade-down"
       data-aos-duration="2000"
+      id="techStackNav"
     >
       <p className={isLightTheme ? "techStackHeading" : "techStackHeadingDark"}>
         Skills and Technologies

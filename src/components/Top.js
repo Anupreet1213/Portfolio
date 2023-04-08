@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HamburgerMenu } from "./HamBurgerMenu";
+import {Link} from 'react-scroll';
 
 const Top = ({ isLightTheme, setIsLightTheme }) => {
   const handleTheme = () => {
@@ -17,14 +18,15 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
       <nav className={isLightTheme ? "navbarLight" : "navbar"} id="navbar">
         <h2 class="name">AnupreetS</h2>
         <div class="navbar-links">
-          <p>Projects</p>
-          <p>Achievements</p>
-          <p>Skills</p>
-          <p>Socials</p>
+          <Link style={{cursor:"pointer"}} to={isLightTheme ?"projects" : "projectsDark"} spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
+          <Link style={{cursor:"pointer"}} to={isLightTheme ?"experience" : "experienceDark"} spy={true} smooth={true} offset={50} duration={500}>Achievements</Link>
+          <Link style={{cursor:"pointer"}} to="techStackNav" spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
+          <Link style={{cursor:"pointer"}} to={isLightTheme ?"contactMe" : "contactMeDark"} spy={true} smooth={true} offset={50} duration={500}>Socials</Link>
         </div>
         <div class="icons">
           <i
             id="toggleLight"
+            style={{cursor:"pointer"}}
             className={
               isLightTheme
                 ? "fa-solid fa-sun toggleLight"
@@ -33,7 +35,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
             onClick={handleTheme}
           ></i>
 
-          <i id="toggleSound" class="fa-solid fa-volume-high"></i>
+          <i id="toggleSound" style={{cursor:"pointer"}} class="fa-solid fa-volume-high"></i>
           <HamburgerMenu
             isLightTheme={isLightTheme}
             setIsLightTheme={setIsLightTheme}
