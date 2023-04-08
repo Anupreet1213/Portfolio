@@ -796,12 +796,13 @@ div.content__slate {
   /* margin-bottom: 40%; */
   /* bottom: 55%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(29, 29, 37);
   border-radius: 20px;
   width: 80%;
   /* Width is set to 80% in Aman's Lappy and is commented out in Anupriya's */
   padding: 3%;
+  
 }
 .startAProject {
   font-size: 2.5rem;
@@ -835,9 +836,58 @@ div.content__slate {
   padding: 1%;
 }
 
+@media screen and (max-width: 1280px) {
+  .startAProject{
+    font-size: 2rem;
+  }
+  .startAProjectDescription{
+    font-size: 1rem;
+  }
+  .contactMeUpDiv{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px){
+  .contactMeDescription{
+    padding-top: 14%;
+    width: 60%;
+  }
+  .contactMe{
+    height: 50vh;
+  }
+  .socialLinkDiv{
+    margin: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contactMe{
+    height: 40vh;
+  }
+  .contactMeUpDiv{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 3%;
+  }
+  .letsDoThisButton{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 5%;
+  }
+  .socialLinks{
+    width: 60% !important;
+  }
+  .contactMeDescription{
+    padding-top: 18%;
+  }
+  .startAProjectDescription{
+    display: none;
+  }
+}
+
+
+
 .socialLinks {
-  /* background-color: red; */
-  /* height: 10vh; */
   width: 30%;
   display: flex;
   color: white;
