@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import AboutMe from "./AboutMe";
 import Top from "./Top";
 import Skills from "./Skills";
@@ -8,6 +8,11 @@ import ContactMe from "./ContactMe";
 
 function App() {
   const [isLightTheme, setIsLightTheme] = useState(true);
+  console.log("===========================================================");
+  console.log(
+    "======================Hey!! What are you doing Here? ====================="
+  );
+  console.log("===========================================================");
 
   return (
     <div className={isLightTheme ? "body" : "darkModeBody"}>
