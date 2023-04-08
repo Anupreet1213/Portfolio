@@ -115,12 +115,12 @@
   }
   .lightModeTop h2 {
     padding: 4%;
-    flex: 0.4;
+    flex: 0.5;
     font-size: 1.8rem;
     /* width: 20% !important; */
   }
   .top h2 {
-    flex: 0.4;
+    flex: 0.5;
     padding: 4%;
     font-size: 1.8rem;
   }
@@ -305,7 +305,7 @@
 .rightHeading {
   font-size: 2rem;
   color: #4e6bff;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .rightSubDescription {

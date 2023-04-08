@@ -16,12 +16,12 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
       <div id="stars-group-3"></div>
 
       <nav className={isLightTheme ? "navbarLight" : "navbar"} id="navbar">
-        <h2 class="name">AnupreetS</h2>
+        <h2 class="name">Aman Ap</h2>
         <div class="navbar-links">
-          <Link style={{cursor:"pointer"}} to={isLightTheme ?"projects" : "projectsDark"} spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
-          <Link style={{cursor:"pointer"}} to={isLightTheme ?"experience" : "experienceDark"} spy={true} smooth={true} offset={50} duration={500}>Achievements</Link>
-          <Link style={{cursor:"pointer"}} to="techStackNav" spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
-          <Link style={{cursor:"pointer"}} to={isLightTheme ?"contactMe" : "contactMeDark"} spy={true} smooth={true} offset={50} duration={500}>Socials</Link>
+          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to={isLightTheme ?"projects" : "projectsDark"} spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
+          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to={isLightTheme ?"experience" : "experienceDark"} spy={true} smooth={true} offset={50} duration={500}>Achievements</Link>
+          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to="techStackNav" spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
+          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to={isLightTheme ?"contactMe" : "contactMeDark"} spy={true} smooth={true} offset={50} duration={500}>Socials</Link>
         </div>
         <div class="icons">
           <i

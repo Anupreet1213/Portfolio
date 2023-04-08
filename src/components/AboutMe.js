@@ -9,16 +9,19 @@ const AboutMe = ({ isLightTheme, setIsLightTheme }) => {
         alt="Left Image"
       />
       <div className="rightDescription">
-        <p id='rightHeading' className="rightHeading">I am a freelance web developer</p>
-        <p id='rightSubDescription'
+        <p id="rightHeading" className="rightHeading">
+          Hey, I am Aman. Glad you landed here!!{" "}
+        </p>
+        <p
+          id="rightSubDescription"
           className={
             isLightTheme ? "rightSubDescription-dark" : "rightSubDescription"
           }
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex
-          accusantium reprehenderit. Itaque fuga eaque enim laboriosam nostrum
-          nihil doloribus aperiam! Voluptas laborum in sed reiciendis minima
-          expedita nulla vero!
+          I am a free-spirited web developer, constantly seeking to expand my
+          skills and push boundaries. I approach coding as an art form, using my
+          creativity to build websites that are both functional and visually
+          stunning.
         </p>
       </div>
     </section>
