@@ -49,6 +49,57 @@
   filter: brightness(1);
 }
 
+@media screen and (max-width: 1500px) {
+ .sittingBoyLight{
+  bottom: 15%;
+  width: 11%;
+ }
+ .sittingBoy{
+  bottom: 15% !important;
+  width: 11% !important;
+ }
+}
+@media screen and (max-width: 1400px) {
+ .sittingBoyLight {
+  bottom: 12% !important;
+  width: 11% !important;
+ }
+ .sittingBoy {
+  bottom: 12% !important;
+  width: 11% !important;
+ }
+}
+@media screen and (max-width: 1200px) {
+ .sittingBoyLight{
+  bottom: 12% !important;
+  width: 13% !important;
+ }
+ .sittingBoy{
+  bottom: 12% !important;
+  width: 13% !important;
+ }
+}
+@media screen and (max-width: 1000px) {
+ .sittingBoyLight{
+  bottom: 8% !important;
+  width: 15% !important;
+ }
+ .sittingBoy{
+  bottom: 8% !important;
+  width: 15% !important;
+ }
+}
+@media screen and (max-width: 800px) {
+ .sittingBoyLight{
+  bottom: 5% !important;
+  width: 25% !important;
+ }
+ .sittingBoy{
+  bottom: 5% !important;
+  width: 25% !important;
+ }
+}
+
 @media screen and (max-width: 680px) {
   .sittingBoy {
     display: none;
@@ -169,6 +220,7 @@
     justify-content: space-between;
   }
 }
+
 .icons {
   display: flex;
   gap: 30%;

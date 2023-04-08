@@ -123,46 +123,7 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
         >
           <a href="#">Socials</a>
         </NavLink>
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.7, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.25, duration: 0.05 },
-            },
-          }}
-        >
-          <i
-            id="toggleLight"
-            className={
-              isLightTheme
-                ? "fa-solid fa-sun toggleLight"
-                : "fa-solid fa-moon toggleLight"
-            }
-            onClick={handleTheme}
-          ></i>
-        </NavLink>
-        <NavLink
-          initial={false}
-          animate={isOpen ? "show" : "hide"}
-          variants={{
-            show: {
-              ...variants.show,
-              transition: { delay: 0.8, duration: 0.2 },
-            },
-            hide: {
-              ...variants.hide,
-              transition: { delay: 0.3, duration: 0.05 },
-            },
-          }}
-        >
-          <i id="toggleSound" class="fa-solid fa-volume-high"></i>
-        </NavLink>
+      
       </NavList>
     </NavMenuContainer>
   );
