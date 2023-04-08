@@ -65,14 +65,13 @@
   .lightModeTop h2{
     padding: 4%;
     flex: 0.4;
+    font-size: 1.8rem;
     /* width: 20% !important; */
   }
   .top h2{
     flex: 0.4;
     padding: 4%;
-  }
-  .navbarLight{
-    /* width: 80vw !important; */
+    font-size: 2rem;
   }
 }
 
@@ -262,15 +261,8 @@
 /* <--------------------------------------------Tech Stack Section------------------------------------------> */
 
 .techStack {
-  /* position: sticky;
-  top: 0; */
   padding: 5% 12%;
   font-family: "Chakra Petch", sans-serif;
-  /* background-color: #40B1D8; */
-  /* background-color: #0093E9; */
-  /* background-color: #19222A; */
-
-  /* background-image: linear-gradient(160deg, #1e9ce6 0%, #80d0c7 100%); */
 }
 
 .techStackHeading {
