@@ -18,6 +18,9 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
   return (
     <section id={isLightTheme ? "projects" : "projectsDark"}>
       <p class="projectsHeading">Projects</p>
+      <div id="stars-group-1"></div>
+        <div id="stars-group-2"></div>
+        <div id="stars-group-3"></div>
       <p class="projectsSubHeading">
         I've used hundreds of web and mobile apps in different industries and
         verticals. Eventually, I decided that it would be a fun challenge to try
@@ -39,6 +42,9 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
               }}
               style={{ background: "url($`{data.imageUrl}`)" }}
             >
+              <div id="stars-group-1"></div>
+        <div id="stars-group-2"></div>
+        <div id="stars-group-3"></div>
               <img src={data.imageUrl} className="cardImage" />
               <div class="content__slate">
                 <h3>{data.title}</h3>
@@ -54,6 +60,8 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
             </div>
           </>
         ))}
+        <div id="stars-group-1"></div>
+        
         <SideBar
           setShow={setShow}
           show={show}
@@ -61,6 +69,7 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
           isLightTheme={isLightTheme}
         />
       </div>
+      
     </section>
   );
 };
