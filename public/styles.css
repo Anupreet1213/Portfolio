@@ -194,6 +194,7 @@
   color: #617bff;
   flex: 0.2;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .navbar-links {
