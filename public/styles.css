@@ -563,10 +563,6 @@ div.content__slate {
   opacity: 1;
 }
 
-/* .dFqYWZ:hover {
-  cursor: none;
-} */
-
 .dFqYWZ::before {
   content: "";
   pointer-events: none;
@@ -716,6 +712,7 @@ div.content__slate {
   padding: 0 20px;
   position: relative;
   padding-bottom: 15%;
+  font-family: "Chakra Petch", sans-serif;
 }
 .wrapper .center-line {
   position: absolute;
@@ -767,7 +764,8 @@ div.content__slate {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ff7979;
+  /* color: #ff7979; */
+  color: #005f9a;
   font-size: 17px;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
@@ -801,7 +799,8 @@ div.content__slate {
 }
 .row section .bottom a {
   text-decoration: none;
-  background: #ff7979;
+  /* background: #ff7979; */
+  background: #1EA7FD;
   color: #fff;
   padding: 7px 15px;
   border-radius: 5px;
@@ -886,6 +885,7 @@ div.content__slate {
   border: 2px solid aqua;
   display: flex;
   align-items: center;
+  color:white;
   text-align: center;
 }
 .letsDoThisButton:hover {
@@ -961,6 +961,7 @@ div.content__slate {
   border: 2px solid white;
   border-radius: 100%;
   padding: 3%;
+  color: white;
 }
 .socialLinkDiv:hover {
   background-color: #fff;
