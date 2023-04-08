@@ -49,6 +49,33 @@
   filter: brightness(1);
 }
 
+@media screen and (max-width: 680px){
+  .sittingBoy{
+    display: none;
+  }
+  .sittingBoyLight{
+    display: none;
+  }
+  .lightModeTop{
+    height: 25vh !important;
+  }
+  .top{
+    height: 25vh !important;
+  }
+  .lightModeTop h2{
+    padding: 4%;
+    flex: 0.4;
+    /* width: 20% !important; */
+  }
+  .top h2{
+    flex: 0.4;
+    padding: 4%;
+  }
+  .navbarLight{
+    /* width: 80vw !important; */
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
