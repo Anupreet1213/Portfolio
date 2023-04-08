@@ -681,8 +681,6 @@ div.content__slate {
 /* ---------------------------------Exp--------------------------- */
 
 #experience {
-  /* position: sticky;
-  top: 0; */
   padding: 5%;
   color: black;
   background: linear-gradient(
@@ -693,8 +691,8 @@ div.content__slate {
 }
 
 #experienceDark {
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   padding: 5%;
   background-color: #1a242c;
   color: #4e6bff;
