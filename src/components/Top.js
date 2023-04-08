@@ -15,7 +15,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
       <div id="stars-group-3"></div>
 
       <nav className={isLightTheme ? "navbarLight" : "navbar"} id="navbar">
-        <h2 class="name">Aman Ap</h2>
+        <h2 class="name">AnupreetS</h2>
         <div class="navbar-links">
           <p>Projects</p>
           <p>Achievements</p>
@@ -23,11 +23,6 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
           <p>Socials</p>
         </div>
         <div class="icons">
-          <HamburgerMenu
-            className="hamburgerMenu"
-            isLightTheme={isLightTheme}
-            setIsLightTheme={setIsLightTheme}
-          />
           <i
             id="toggleLight"
             className={
@@ -39,6 +34,10 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
           ></i>
 
           <i id="toggleSound" class="fa-solid fa-volume-high"></i>
+          <HamburgerMenu
+            isLightTheme={isLightTheme}
+            setIsLightTheme={setIsLightTheme}
+          />
         </div>
       </nav>
       <svg viewBox="0 0 1340 319" className="svgClass">

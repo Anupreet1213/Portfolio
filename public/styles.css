@@ -154,18 +154,20 @@
   .navbar-links {
     display: none;
   }
-  #toggleLight {
+  /* #toggleLight {
     display: none;
   }
   #toggleSound {
     display: none;
-  }
+  } */
 }
 @media (max-width: 768px) {
   #navbar {
-    top: 2%;
+    top: 0;
     right: 0;
-    width: 98vw;
+    position: relative;
+    /* align-items: center; */
+    width: 90vw;
     justify-content: space-between;
   }
 }
@@ -173,14 +175,10 @@
   display: flex;
   gap: 30%;
   flex: 0.1;
+  align-items: center;
 }
 
 /* -------------------------top mein hi burger wala nav----------------------------- */
-
-/* .hamburgerMenu {
-
-
-} */
 
 /* <--------------------------------------------About Me Section------------------------------------------> */
 .aboutMeHeading {
@@ -258,7 +256,7 @@
 /* <--------------------------------------------Tech Stack Section------------------------------------------> */
 
 .techStack {
-  padding: 5% 12%;
+  padding: 2% 12% 3% 12%;
   font-family: "Chakra Petch", sans-serif;
 }
 

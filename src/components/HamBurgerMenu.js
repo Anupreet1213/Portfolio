@@ -136,19 +136,7 @@ export function HamburgerMenu({ isLightTheme, setIsLightTheme }) {
             animate={isOpen ? "show" : "hide"}
             variants={commonVariants}
             transition={commonTransition}
-          >
-            {/* <IconContainer> */}
-            <i
-              id="toggleLight"
-              className={
-                isLightTheme
-                  ? "fa-solid fa-sun toggleLight"
-                  : "fa-solid fa-moon toggleLight"
-              }
-              onClick={handleTheme}
-            ></i>
-            {/* </IconContainer> */}
-          </LoginButton>
+          ></LoginButton>
           {/* <LoginButton
             initial={false}
             animate={isOpen ? "show" : "hide"}
@@ -157,11 +145,6 @@ export function HamburgerMenu({ isLightTheme, setIsLightTheme }) {
           >
             <i id="toggleSound" class="fa-solid fa-volume-high"></i>
           </LoginButton> */}
-          <div>
-            <i id="toggleSound" class="fa-solid fa-volume-high"></i>
-            {/* <FontAwesomeIcon icon="fa-solid fa-volume-high" /> */}
-            {/* Hello */}
-          </div>
         </TopContainer>
         <ContentContainer>
           <NavMenu
