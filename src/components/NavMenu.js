@@ -26,7 +26,6 @@ const NavLink = styled(motion.li)`
 
   a {
     text-decoration: none;
-    color: #444;
     font-size: 20px;
     transition: all 200ms ease-in-out;
   }
@@ -73,7 +72,9 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a href="#">Projects</a>
+          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+            Projects
+          </a>
         </NavLink>
         <NavLink
           initial={false}
@@ -89,7 +90,9 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a href="#">Achievements</a>
+          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+            Achievements
+          </a>
         </NavLink>
         <NavLink
           initial={false}
@@ -105,7 +108,9 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a href="#">Skills</a>
+          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+            Skills
+          </a>
         </NavLink>
         <NavLink
           initial={false}
@@ -121,7 +126,9 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a href="#">Socials</a>
+          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+            Socials
+          </a>
         </NavLink>
       </NavList>
     </NavMenuContainer>

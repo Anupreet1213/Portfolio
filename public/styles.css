@@ -50,54 +50,54 @@
 }
 
 @media screen and (max-width: 1500px) {
- .sittingBoyLight{
-  bottom: 15%;
-  width: 11%;
- }
- .sittingBoy{
-  bottom: 15% !important;
-  width: 11% !important;
- }
+  .sittingBoyLight {
+    bottom: 15%;
+    width: 11%;
+  }
+  .sittingBoy {
+    bottom: 15% !important;
+    width: 11% !important;
+  }
 }
 @media screen and (max-width: 1400px) {
- .sittingBoyLight {
-  bottom: 12% !important;
-  width: 11% !important;
- }
- .sittingBoy {
-  bottom: 12% !important;
-  width: 11% !important;
- }
+  .sittingBoyLight {
+    bottom: 12% !important;
+    width: 11% !important;
+  }
+  .sittingBoy {
+    bottom: 12% !important;
+    width: 11% !important;
+  }
 }
 @media screen and (max-width: 1200px) {
- .sittingBoyLight{
-  bottom: 12% !important;
-  width: 13% !important;
- }
- .sittingBoy{
-  bottom: 12% !important;
-  width: 13% !important;
- }
+  .sittingBoyLight {
+    bottom: 12% !important;
+    width: 13% !important;
+  }
+  .sittingBoy {
+    bottom: 12% !important;
+    width: 13% !important;
+  }
 }
 @media screen and (max-width: 1000px) {
- .sittingBoyLight{
-  bottom: 8% !important;
-  width: 15% !important;
- }
- .sittingBoy{
-  bottom: 8% !important;
-  width: 15% !important;
- }
+  .sittingBoyLight {
+    bottom: 8% !important;
+    width: 15% !important;
+  }
+  .sittingBoy {
+    bottom: 8% !important;
+    width: 15% !important;
+  }
 }
 @media screen and (max-width: 800px) {
- .sittingBoyLight{
-  bottom: 5% !important;
-  width: 25% !important;
- }
- .sittingBoy{
-  bottom: 5% !important;
-  width: 25% !important;
- }
+  .sittingBoyLight {
+    bottom: 5% !important;
+    width: 25% !important;
+  }
+  .sittingBoy {
+    bottom: 5% !important;
+    width: 25% !important;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -122,7 +122,7 @@
   .top h2 {
     flex: 0.4;
     padding: 4%;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -193,6 +193,7 @@
 .name {
   color: #617bff;
   flex: 0.2;
+  font-size: 1.6rem;
 }
 
 .navbar-links {
@@ -205,6 +206,9 @@
   .navbar-links {
     display: none;
   }
+  /* .name {
+    font-size: 2rem;
+  } */
   /* #toggleLight {
     display: none;
   }
@@ -231,6 +235,10 @@
 }
 
 /* -------------------------top mein hi burger wala nav----------------------------- */
+
+.hiLicp {
+  background-color: yellow;
+}
 
 /* <--------------------------------------------About Me Section------------------------------------------> */
 .aboutMeHeading {
@@ -280,6 +288,9 @@
     font-size: 1.4rem;
   }
   .leftImageDull {
+    width: 60vw !important;
+  }
+  .leftImage {
     width: 60vw !important;
   }
 }
@@ -798,7 +809,7 @@ div.content__slate {
 .row section .bottom a {
   text-decoration: none;
   /* background: #ff7979; */
-  background: #1EA7FD;
+  background: #1ea7fd;
   color: #fff;
   padding: 7px 15px;
   border-radius: 5px;
@@ -842,7 +853,7 @@ div.content__slate {
 .contactMe {
   background-color: #7dcbfe;
   /* background-color: #101111;  */
-  height: 55vh;
+  /* height: 55vh; */
   display: flex;
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
@@ -853,7 +864,7 @@ div.content__slate {
 .contactMeUpDiv {
   color: white;
   position: absolute;
-  top: -15%;
+  top: -20%;
   /* Top is -25% in Anupriya's lappy */
 
   /* margin-bottom: 40%; */
@@ -883,7 +894,7 @@ div.content__slate {
   border: 2px solid aqua;
   display: flex;
   align-items: center;
-  color:white;
+  color: white;
   text-align: center;
 }
 .letsDoThisButton:hover {
@@ -916,7 +927,7 @@ div.content__slate {
     width: 60%;
   }
   .contactMe {
-    height: 50vh;
+    /* height: 50vh; */
   }
   .socialLinkDiv {
     margin: 5%;
@@ -924,7 +935,7 @@ div.content__slate {
 }
 @media screen and (max-width: 500px) {
   .contactMe {
-    height: 40vh;
+    /* height: 40vh; */
   }
   .contactMeUpDiv {
     flex-direction: column;
@@ -949,7 +960,7 @@ div.content__slate {
 }
 
 .socialLinks {
-  width: 30%;
+  /* width: 30%; */
   display: flex;
   color: white;
   justify-content: space-between;

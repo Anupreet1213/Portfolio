@@ -7,6 +7,61 @@ import styled from "styled-components";
 import { MenuToggle } from "./MenuToggle";
 import { NavMenu } from "./NavMenu";
 
+export function HamburgerMenu({ isLightTheme, setIsLightTheme }) {
+  const [isOpen, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
+
+  const handleTheme = () => {
+    const body = document.getElementsByTagName("BODY")[0];
+    body.classList.toggle("lightModeBody");
+    setIsLightTheme(!isLightTheme);
+  };
+
+  return (
+    <HamburgerMenuContainer>
+      <MenuToggle
+        toggle={toggleMenu}
+        isOpen={isOpen}
+        isLightTheme={isLightTheme}
+      />
+      <MenuContainer
+        style={{ backgroundColor: isLightTheme ? "white" : "black" }}
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        variants={menuVariants}
+        transition={menuTransition}
+      >
+        <TopContainer>
+          <LoginButton
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={commonVariants}
+            transition={commonTransition}
+          ></LoginButton>
+          {/* <LoginButton
+            initial={false}
+            animate={isOpen ? "show" : "hide"}
+            variants={commonVariants}
+            transition={commonTransition}
+          >
+            <i id="toggleSound" class="fa-solid fa-volume-high"></i>
+          </LoginButton> */}
+        </TopContainer>
+        <ContentContainer>
+          <NavMenu
+            isOpen={isOpen}
+            isLightTheme={isLightTheme}
+            setIsLightTheme={setIsLightTheme}
+          />
+        </ContentContainer>
+      </MenuContainer>
+    </HamburgerMenuContainer>
+  );
+}
+
 const HamburgerMenuContainer = styled.div`
   display: flex;
 `;
@@ -23,7 +78,6 @@ const MenuContainer = styled(motion.div)`
   width: 103%;
   max-width: 103%;
   height: 100%;
-  background-color: #fff;
   box-shadow: -2px 0 2px rgba(15, 15, 15, 0.3);
   z-index: 90;
   position: fixed;
@@ -107,53 +161,3 @@ const commonVariants = {
 };
 
 const commonTransition = { type: "spring", duration: 0.05 };
-
-export function HamburgerMenu({ isLightTheme, setIsLightTheme }) {
-  const [isOpen, setOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setOpen(!isOpen);
-  };
-
-  const handleTheme = () => {
-    const body = document.getElementsByTagName("BODY")[0];
-    body.classList.toggle("lightModeBody");
-    setIsLightTheme(!isLightTheme);
-  };
-
-  return (
-    <HamburgerMenuContainer>
-      <MenuToggle toggle={toggleMenu} isOpen={isOpen} />
-      <MenuContainer
-        initial={false}
-        animate={isOpen ? "open" : "closed"}
-        variants={menuVariants}
-        transition={menuTransition}
-      >
-        <TopContainer>
-          <LoginButton
-            initial={false}
-            animate={isOpen ? "show" : "hide"}
-            variants={commonVariants}
-            transition={commonTransition}
-          ></LoginButton>
-          {/* <LoginButton
-            initial={false}
-            animate={isOpen ? "show" : "hide"}
-            variants={commonVariants}
-            transition={commonTransition}
-          >
-            <i id="toggleSound" class="fa-solid fa-volume-high"></i>
-          </LoginButton> */}
-        </TopContainer>
-        <ContentContainer>
-          <NavMenu
-            isOpen={isOpen}
-            isLightTheme={isLightTheme}
-            setIsLightTheme={setIsLightTheme}
-          />
-        </ContentContainer>
-      </MenuContainer>
-    </HamburgerMenuContainer>
-  );
-}

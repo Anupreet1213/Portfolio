@@ -22,7 +22,7 @@ const Path = (props) => (
 
 const transition = { duration: 0.3 };
 
-export function MenuToggle({ toggle, isOpen }) {
+export function MenuToggle({ toggle, isOpen, isLightTheme }) {
   return (
     <Button onClick={toggle}>
       <svg width="23" height="23" viewBox="0 -4 23 23">
@@ -30,14 +30,20 @@ export function MenuToggle({ toggle, isOpen }) {
           animate={isOpen ? "open" : "closed"}
           initial={false}
           variants={{
-            closed: { d: "M 2 2.5 L 20 2.5", stroke: "hsl(0, 0%, 0%)" },
-            open: { d: "M 3 16.5 L 17 2.5", stroke: "hsl(0, 0%, 18%)" },
+            closed: {
+              d: "M 2 2.5 L 20 2.5",
+              stroke: isLightTheme ? "hsl(0, 0%, 0%)" : "hsl(100%, 100%, 100%)",
+            },
+            open: {
+              d: "M 3 16.5 L 17 2.5",
+              stroke: isLightTheme ? "hsl(0, 0%, 0%)" : "hsl(100%, 100%, 100%)",
+            },
           }}
           transition={transition}
         />
         <Path
           d="M 2 9.423 L 20 9.423"
-          stroke="hsl(0, 0%, 0%)"
+          stroke={isLightTheme ? "hsl(0, 0%, 0%)" : "hsl(0, 0%, 100%)"}
           animate={isOpen ? "open" : "closed"}
           initial={false}
           variants={{
@@ -50,8 +56,14 @@ export function MenuToggle({ toggle, isOpen }) {
           animate={isOpen ? "open" : "closed"}
           initial={false}
           variants={{
-            closed: { d: "M 2 16.346 L 20 16.346", stroke: "hsl(0, 0%, 0%)" },
-            open: { d: "M 3 2.5 L 17 16.346", stroke: "hsl(0, 0%, 18%)" },
+            closed: {
+              d: "M 2 16.346 L 20 16.346",
+              stroke: isLightTheme ? "hsl(0, 0%, 0%)" : "hsl(100%, 100%, 100%)",
+            },
+            open: {
+              d: "M 3 2.5 L 17 16.346",
+              stroke: isLightTheme ? "hsl(0, 0%, 0%)" : "hsl(100%, 100%, 100%)",
+            },
           }}
           transition={transition}
         />
