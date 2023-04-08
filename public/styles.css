@@ -538,6 +538,24 @@ div.content__slate {
   grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width:580px){
+  .jwbuPS{
+    grid-template-columns: 1fr;
+  }
+.dFqYWZ{
+  height: 260px;
+}
+.projectsHeading{
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+.projectsSubHeading{
+  font-size: 1.4rem;
+}
+}
+
+
+
 @keyframes fadeInUp {
   0% {
     margin-top: 4rem;
@@ -744,7 +762,7 @@ div.content__slate {
 .contactMeUpDiv {
   color: white;
   position: absolute;
-  top: -20%;
+  top: -15%;
   /* Top is -25% in Anupriya's lappy */
 
   /* margin-bottom: 40%; */
