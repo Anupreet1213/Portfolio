@@ -175,11 +175,40 @@
   flex: 0.5;
   opacity: 0.7;
 }
+
+@media screen and (max-width: 870px) {
+ 
+  #aboutMe {
+    gap: 4%;
+    padding: 5% 4%;
+  }
+}
 .leftImageDull {
   width: 30vw;
   flex: 0.5;
   opacity: 1;
 }
+
+@media screen and (max-width: 670px) {
+  #aboutMe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    padding-bottom: 7%;
+  }
+  #rightHeading {
+    font-size: 2rem;
+  }
+  #rightSubDescription{
+    font-size: 1.4rem;
+  }
+  .leftImageDull{
+    width: 60vw !important;
+  }
+}
+
 
 .rightDescription {
   display: flex;
@@ -297,17 +326,15 @@
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
 }
-.projectsHeading:hover{
-  color:#233dbf;
+.projectsHeading:hover {
+  color: #233dbf;
 }
-.projectsSubHeading{
-text-align: center;
-padding-bottom: 2%;
-/* width: 80%; */
-font-size: 1.5rem;
+.projectsSubHeading {
+  text-align: center;
+  padding-bottom: 2%;
+  /* width: 80%; */
+  font-size: 1.5rem;
 }
-
-
 
 /* <--------------------------------------------Background Stars------------------------------------------> */
 
@@ -690,7 +717,7 @@ div.content__slate {
     left: -60px;
   }
 }
-@media (max-width: 440px) {
+/* @media (max-width: 440px) {
   .wrapper .center-line,
   .row section::before,
   .row section .icon {
@@ -699,9 +726,7 @@ div.content__slate {
   .wrapper .row {
     margin: 10px 0;
   }
-}
-
-
+} */
 
 /* ------------------------------Contact Me---------------------------------- */
 
@@ -728,7 +753,7 @@ div.content__slate {
   justify-content: space-around;
   background-color: rgb(29, 29, 37);
   border-radius: 20px;
-  width: 80%; 
+  width: 80%;
   /* Width is set to 80% in Aman's Lappy and is commented out in Anupriya's */
   padding: 3%;
 }

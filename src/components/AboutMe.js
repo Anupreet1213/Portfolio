@@ -9,8 +9,8 @@ const AboutMe = ({ isLightTheme, setIsLightTheme }) => {
         alt="Left Image"
       />
       <div className="rightDescription">
-        <p className="rightHeading">I am a freelance web developer</p>
-        <p
+        <p id='rightHeading' className="rightHeading">I am a freelance web developer</p>
+        <p id='rightSubDescription'
           className={
             isLightTheme ? "rightSubDescription-dark" : "rightSubDescription"
           }
