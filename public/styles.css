@@ -375,8 +375,17 @@
   justify-content: center;
   /* text-align: center; */
   /* gap: 1rem; */
+  /* position: absolute; */
   align-items: center;
   border-radius: 10px;
+  user-select: none;
+}
+
+.techStackDiv:hover {
+  transform: perspective(500px) translateZ(20px);
+  animation-delay: 100ms;
+  cursor: pointer;
+  /* background-color: red; */
 }
 
 .techStackIcons {
