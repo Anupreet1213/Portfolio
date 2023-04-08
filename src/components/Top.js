@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HamburgerMenu } from "./HamBurgerMenu";
-import {Link} from 'react-scroll';
+import { Link } from "react-scroll";
+import sound from "./PortfolioBGM.mp3";
 
 const Top = ({ isLightTheme, setIsLightTheme }) => {
   const handleTheme = () => {
@@ -8,6 +9,17 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
     body.classList.toggle("lightModeBody");
     setIsLightTheme(!isLightTheme);
   };
+  const [audio] = useState(new Audio(sound));
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    audio.loop = true;
+    if (isPlaying) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }, [isPlaying]);
 
   return (
     <div className={isLightTheme ? "lightModeTop" : "top"}>
@@ -18,15 +30,51 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
       <nav className={isLightTheme ? "navbarLight" : "navbar"} id="navbar">
         <h2 class="name">Aman Ap</h2>
         <div class="navbar-links">
-          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to={isLightTheme ?"projects" : "projectsDark"} spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
-          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to={isLightTheme ?"experience" : "experienceDark"} spy={true} smooth={true} offset={50} duration={500}>Achievements</Link>
-          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to="techStackNav" spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
-          <Link style={{cursor:"pointer",fontSize:"1.2rem"}} to={isLightTheme ?"contactMe" : "contactMeDark"} spy={true} smooth={true} offset={50} duration={500}>Socials</Link>
+          <Link
+            style={{ cursor: "pointer", fontSize: "1.2rem" }}
+            to={isLightTheme ? "projects" : "projectsDark"}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Projects
+          </Link>
+          <Link
+            style={{ cursor: "pointer", fontSize: "1.2rem" }}
+            to={isLightTheme ? "experience" : "experienceDark"}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Achievements
+          </Link>
+          <Link
+            style={{ cursor: "pointer", fontSize: "1.2rem" }}
+            to="techStackNav"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Skills
+          </Link>
+          <Link
+            style={{ cursor: "pointer", fontSize: "1.2rem" }}
+            to={isLightTheme ? "contactMe" : "contactMeDark"}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Socials
+          </Link>
         </div>
         <div class="icons">
           <i
             id="toggleLight"
-            style={{cursor:"pointer"}}
+            style={{ cursor: "pointer" }}
             className={
               isLightTheme
                 ? "fa-solid fa-sun toggleLight"
@@ -35,7 +83,12 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
             onClick={handleTheme}
           ></i>
 
-          <i id="toggleSound" style={{cursor:"pointer"}} class="fa-solid fa-volume-high"></i>
+          <i
+            onClick={() => setIsPlaying(!isPlaying)}
+            id="toggleSound"
+            style={{ cursor: "pointer" }}
+            className={ isPlaying? "fa-solid fa-volume-high" : "fa-solid fa-volume-xmark" }
+          ></i>
           <HamburgerMenu
             isLightTheme={isLightTheme}
             setIsLightTheme={setIsLightTheme}
