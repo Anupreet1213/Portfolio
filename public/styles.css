@@ -49,6 +49,32 @@
   filter: brightness(1);
 }
 
+@media screen and (max-width: 680px) {
+  .sittingBoy {
+    display: none;
+  }
+  .sittingBoyLight {
+    display: none;
+  }
+  .lightModeTop {
+    height: 25vh !important;
+  }
+  .top {
+    height: 25vh !important;
+  }
+  .lightModeTop h2 {
+    padding: 4%;
+    flex: 0.4;
+    font-size: 1.8rem;
+    /* width: 20% !important; */
+  }
+  .top h2 {
+    flex: 0.4;
+    padding: 4%;
+    font-size: 2rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -152,12 +178,12 @@
 /* -------------------------top mein hi burger wala nav----------------------------- */
 
 /* .hamburgerMenu {
-  
+
+
 } */
 
 /* <--------------------------------------------About Me Section------------------------------------------> */
 .aboutMeHeading {
-  /* color: #C60C62; */
   color: hsl(203, 100%, 50%);
   font-family: "Chakra Petch", sans-serif;
 }
@@ -232,16 +258,8 @@
 /* <--------------------------------------------Tech Stack Section------------------------------------------> */
 
 .techStack {
-  /* position: relative; */
-  padding: 2% 12%;
+  padding: 5% 12%;
   font-family: "Chakra Petch", sans-serif;
-  /* z-index: 0; */
-  /* z-index: 0; */
-  /* background-color: #40B1D8; */
-  /* background-color: #0093E9; */
-  /* background-color: #19222A; */
-
-  /* background-image: linear-gradient(160deg, #1e9ce6 0%, #80d0c7 100%); */
 }
 
 .techStackHeading {
@@ -792,7 +810,7 @@ div.content__slate {
   /* margin-bottom: 40%; */
   /* bottom: 55%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(29, 29, 37);
   border-radius: 20px;
   width: 80%;
@@ -831,9 +849,56 @@ div.content__slate {
   padding: 1%;
 }
 
+@media screen and (max-width: 1280px) {
+  .startAProject {
+    font-size: 2rem;
+  }
+  .startAProjectDescription {
+    font-size: 1rem;
+  }
+  .contactMeUpDiv {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .contactMeDescription {
+    padding-top: 14%;
+    width: 60%;
+  }
+  .contactMe {
+    height: 50vh;
+  }
+  .socialLinkDiv {
+    margin: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contactMe {
+    height: 40vh;
+  }
+  .contactMeUpDiv {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 3%;
+  }
+  .letsDoThisButton {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 5%;
+  }
+  .socialLinks {
+    width: 60% !important;
+  }
+  .contactMeDescription {
+    padding-top: 18%;
+  }
+  .startAProjectDescription {
+    display: none;
+  }
+}
+
 .socialLinks {
-  /* background-color: red; */
-  /* height: 10vh; */
   width: 30%;
   display: flex;
   color: white;
