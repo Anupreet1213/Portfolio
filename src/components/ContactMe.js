@@ -15,8 +15,10 @@ const ContactMe = () => {
         <p className="startAProject">Start a project</p>
         <p className="startAProjectDescription">
           Interested in working together? We should queue up a time to chat.
-        </p>
-        <div className="letsDoThisButton"> Let's Do This</div>
+        </p> <a style={{textDecoration: "none"}} className="letsDoThisButton" href="mailto:amanasstudent@gmail.com">
+
+        <div> Let's Do This</div>
+        </a>
       </div>
 
       <div className="contactMeDescription">
@@ -24,18 +26,18 @@ const ContactMe = () => {
       </div>
 
       <div className="socialLinks">
-        <div className="socialLinkDiv">
+        <a href="https://twitter.com/Aman__Ap" className="socialLinkDiv">
           <i class="fa-brands fa-twitter links"></i>
-        </div>
-        <div className="socialLinkDiv">
+        </a>
+        <a href="https://www.linkedin.com/in/aman-pathak-original/" className="socialLinkDiv">
           <i class="fa-brands fa-linkedin links"></i>
-        </div>
-        <div className="socialLinkDiv">
+        </a>
+        <a href="https://www.linkedin.com/in/aman-pathak-original/" className="socialLinkDiv">
           <i class="fa-brands fa-github links"></i>
-        </div>
-        <div className="socialLinkDiv">
+        </a>
+        <a href="mailto:amanasstudent@gmail.com" className="socialLinkDiv">
           <i class="fa-solid fa-envelope links"></i>
-        </div>
+        </a>
       </div>
 
       <div className="handcraftedBy">

@@ -30,16 +30,14 @@ const Experience = ({ isLightTheme }) => {
             <i class="icon fas fa-home"></i>
             <div class="details">
               <span class="title">Freelancer</span>
-              <span>1st Jan 2021</span>
+              <span>Since November 2022</span>
             </div>
             <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
+              I've been working as a freelancer since Nov'22. As a freelancer, I have the flexibility to choose my own clients and projects, which allows me to work on things that I am passionate about. 
             </p>
             <div class="bottom">
-              <a href="#">Read more</a>
-              <i>- Someone famous</i>
+              <a href="https://www.freelancer.in/u/amanpathak26">Freelance Profile</a>
+              {/* <i>- Someone famous</i> */}
             </div>
           </section>
         </div>
@@ -48,16 +46,14 @@ const Experience = ({ isLightTheme }) => {
             <i class="icon fas fa-star"></i>
             <div class="details">
               <span class="title">Project Contributer at VigyaAi</span>
-              <span>2nd Jan 2021</span>
+              <span>Dec 2022-Feb 2023</span>
             </div>
             <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
+             Contributed to few projects at VigyaAi. One of them includes Profile Picker that provides a very effective solutions to the corporates for filtering their tonnes of cluttered resumes in just few clicks. 
             </p>
             <div class="bottom">
-              <a href="#">Read more</a>
-              <i>- Someone famous</i>
+              <a href="https://www.vigyaai.com/">VigyaAi</a>
+              {/* <i>- Someone famous</i> */}
             </div>
           </section>
         </div>
@@ -69,16 +65,14 @@ const Experience = ({ isLightTheme }) => {
             <i class="icon fas fa-rocket"></i>
             <div class="details">
               <span class="title">Top 1.5% in International Hackathon</span>
-              <span>3rd Jan 2021</span>
+              <span>Jan 2023</span>
             </div>
             <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
+              Got a stunning position in the International Hackathon organised by Lablab.ai team. We built Machine Learning Based Project that uses Cohere API. The final product made us land in top 30 of the hackathon.
             </p>
             <div class="bottom">
-              <a href="#">Read more</a>
-              <i>- Someone famous</i>
+              <a href="https://lablab.ai/u/@AmanAp/cld34glda001ade0seyrvzix2"> Certification</a>
+              {/* <i>- Someone famous</i> */}
             </div>
           </section>
         </div>
@@ -87,16 +81,14 @@ const Experience = ({ isLightTheme }) => {
             <i class="icon fas fa-globe"></i>
             <div class="details">
               <span class="title">1st Prize in WebSpin Contest</span>
-              <span>4th Jan 2021</span>
+              <span>April 2022</span>
             </div>
             <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
+              I got the first prize in an event that focused on Web Development. The Event was on intercollege level with more than 100 participants.
             </p>
             <div class="bottom">
-              <a href="#">Read more</a>
-              <i>- Someone famous</i>
+              <a href="https://drive.google.com/file/d/1_nlIGzzrlNOR1WNNfCe9-I4S2wQMEPn_/view?usp=share_link">Certification</a>
+              {/* <i>- Someone famous</i> */}
             </div>
           </section>
         </div>
@@ -105,16 +97,14 @@ const Experience = ({ isLightTheme }) => {
             <i class="icon fas fa-globe"></i>
             <div class="details">
               <span class="title">9th State Rank in IRAO</span>
-              <span>4th Jan 2021</span>
+              <span>February 2018</span>
             </div>
             <p>
-              Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed
-              qui veroes praesentium maiores, sint eos vero sapiente voluptas
-              debitis dicta dolore.
+              I topped my district in International Reasoning Olympiad and also got 9th State Rank.
             </p>
             <div class="bottom">
-              <a href="#">Read more</a>
-              <i>- Someone famous</i>
+              <a href="https://drive.google.com/file/d/1_mzkZsVL8DqlML_-oLIKFjRFrZ1vaWUA/view?usp=share_link">Certification</a>
+              {/* <i>- Someone famous</i> */}
             </div>
           </section>
         </div>

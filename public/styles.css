@@ -49,6 +49,57 @@
   filter: brightness(1);
 }
 
+@media screen and (max-width: 1500px) {
+ .sittingBoyLight{
+  bottom: 15%;
+  width: 11%;
+ }
+ .sittingBoy{
+  bottom: 15% !important;
+  width: 11% !important;
+ }
+}
+@media screen and (max-width: 1400px) {
+ .sittingBoyLight {
+  bottom: 12% !important;
+  width: 11% !important;
+ }
+ .sittingBoy {
+  bottom: 12% !important;
+  width: 11% !important;
+ }
+}
+@media screen and (max-width: 1200px) {
+ .sittingBoyLight{
+  bottom: 12% !important;
+  width: 13% !important;
+ }
+ .sittingBoy{
+  bottom: 12% !important;
+  width: 13% !important;
+ }
+}
+@media screen and (max-width: 1000px) {
+ .sittingBoyLight{
+  bottom: 8% !important;
+  width: 15% !important;
+ }
+ .sittingBoy{
+  bottom: 8% !important;
+  width: 15% !important;
+ }
+}
+@media screen and (max-width: 800px) {
+ .sittingBoyLight{
+  bottom: 5% !important;
+  width: 25% !important;
+ }
+ .sittingBoy{
+  bottom: 5% !important;
+  width: 25% !important;
+ }
+}
+
 @media screen and (max-width: 680px) {
   .sittingBoy {
     display: none;
@@ -171,6 +222,7 @@
     justify-content: space-between;
   }
 }
+
 .icons {
   display: flex;
   gap: 30%;
@@ -509,10 +561,6 @@ div.content__slate {
   opacity: 1;
 }
 
-/* .dFqYWZ:hover {
-  cursor: none;
-} */
-
 .dFqYWZ::before {
   content: "";
   pointer-events: none;
@@ -662,6 +710,7 @@ div.content__slate {
   padding: 0 20px;
   position: relative;
   padding-bottom: 15%;
+  font-family: "Chakra Petch", sans-serif;
 }
 .wrapper .center-line {
   position: absolute;
@@ -713,7 +762,8 @@ div.content__slate {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ff7979;
+  /* color: #ff7979; */
+  color: #005f9a;
   font-size: 17px;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
@@ -747,7 +797,8 @@ div.content__slate {
 }
 .row section .bottom a {
   text-decoration: none;
-  background: #ff7979;
+  /* background: #ff7979; */
+  background: #1EA7FD;
   color: #fff;
   padding: 7px 15px;
   border-radius: 5px;
@@ -791,7 +842,7 @@ div.content__slate {
 .contactMe {
   background-color: #7dcbfe;
   /* background-color: #101111;  */
-  height: 60vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
@@ -832,6 +883,7 @@ div.content__slate {
   border: 2px solid aqua;
   display: flex;
   align-items: center;
+  color:white;
   text-align: center;
 }
 .letsDoThisButton:hover {
@@ -907,6 +959,7 @@ div.content__slate {
   border: 2px solid white;
   border-radius: 100%;
   padding: 3%;
+  color: white;
 }
 .socialLinkDiv:hover {
   background-color: #fff;
