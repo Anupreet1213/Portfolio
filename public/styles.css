@@ -844,7 +844,7 @@ div.content__slate {
 .contactMe {
   background-color: #7dcbfe;
   /* background-color: #101111;  */
-  height: 60vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
