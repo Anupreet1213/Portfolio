@@ -311,7 +311,7 @@ const Wrapper = styled.div`
         var(--color-darkM-homepage-light)
       ); */
       }
-      background: black;
+      background: #0e141b;
       position: relative;
       padding: 2rem 2rem 4rem;
       overflow-x: overlay;

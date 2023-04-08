@@ -3,10 +3,18 @@ import React from "react";
 import styled from "styled-components";
 
 const NavMenuContainer = styled.div`
-  width: 100%;
-  height: 100vh;
+  width: 125%;
+  margin:-15%;
+  height: 120vh;
   display: flex;
   flex-direction: column;
+  // default background color
+  background-color: #000;
+  // overflow:hidden;
+  /* styles for light theme */
+  &.lightMode {
+    background-color: #fff;
+  }
 `;
 
 const NavList = styled.ul`
@@ -56,7 +64,7 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
   };
 
   return (
-    <NavMenuContainer>
+    <NavMenuContainer className={isLightTheme ? "lightMode" : ""}>
       <NavList>
         <NavLink
           initial={false}
@@ -118,6 +126,8 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
           variants={{
             show: {
               ...variants.show,
+             
+
               transition: { delay: 0.6, duration: 0.2 },
             },
             hide: {

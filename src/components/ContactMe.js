@@ -2,9 +2,21 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-solid-svg-icons";
 
-const ContactMe = () => {
+const ContactMe = ({isLightTheme, setIsLightTheme}) => {
+
+  const handleTheme = () => {
+    const contactMe = document.getElementsByClassName("contactMe")[0];
+    contactMe.classList.toggle("contactMeDark");
+    const contactMeDescription = document.getElementsByClassName("contactMeDescription")[0];
+    contactMeDescription.toggle("contactMeDescriptionDark");
+    const handcraftedBy = document.getElementsByClassName("handcraftedBy")[0];
+    handcraftedBy.classList.toggle("handcraftedByDark");
+    
+    setIsLightTheme(!isLightTheme);
+  };
+
   return (
-    <div className="contactMe">
+    <div className={isLightTheme ? "contactMe" : "contactMeDark"}>
       <div id="stars-group-1"></div>
       <div id="stars-group-2"></div>
       <div id="stars-group-3"></div>
@@ -21,7 +33,7 @@ const ContactMe = () => {
         </a>
       </div>
 
-      <div className="contactMeDescription">
+      <div className={isLightTheme ? "contactMeDescription" : "contactMeDescriptionDark"}>
         Living, learning, & leveling up one day at a time.
       </div>
 
@@ -40,7 +52,7 @@ const ContactMe = () => {
         </a>
       </div>
 
-      <div className="handcraftedBy">
+      <div className={isLightTheme ? "handcraftedBy" : "handcraftedByDark"}>
         <p>Handcrafted by me © Aman Pathak</p>
       </div>
     </div>

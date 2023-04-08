@@ -420,7 +420,7 @@
   padding: 5% 10%;
   font-family: "Chakra Petch", sans-serif;
   /* background-color: #3AB1FB; */
-  color: #4e6bff;
+  color: white;
   background-color: #1a242c;
 }
 
@@ -692,8 +692,6 @@ div.content__slate {
 /* ---------------------------------Exp--------------------------- */
 
 #experience {
-  /* position: sticky;
-  top: 0; */
   padding: 5%;
   color: black;
   background: linear-gradient(
@@ -704,8 +702,8 @@ div.content__slate {
 }
 
 #experienceDark {
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   padding: 5%;
   background-color: #1a242c;
   color: #4e6bff;
@@ -837,23 +835,23 @@ div.content__slate {
     left: -60px;
   }
 }
-/* @media (max-width: 440px) {
-  .wrapper .center-line,
-  .row section::before,
-  .row section .icon {
-    display: none;
-  }
-  .wrapper .row {
-    margin: 10px 0;
-  }
-} */
-
 /* ------------------------------Contact Me---------------------------------- */
 
 .contactMe {
   background-color: #7dcbfe;
   /* background-color: #101111;  */
   /* height: 55vh; */
+  display: flex;
+  flex-direction: column;
+  font-family: "Chakra Petch", sans-serif;
+  align-items: center;
+  position: relative;
+  padding-top: 7%;
+}
+.contactMeDark{
+  background-color: #0d1920;
+  /* background-color: #101111;  */
+  height: 55vh;
   display: flex;
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
@@ -905,6 +903,13 @@ div.content__slate {
 .contactMeDescription {
   font-size: 1.6rem;
   /* color:white; */
+  width: 25%;
+  text-align: center;
+  padding: 1%;
+}
+.contactMeDescriptionDark{
+  font-size: 1.6rem;
+  color:white;
   width: 25%;
   text-align: center;
   padding: 1%;
@@ -986,4 +991,8 @@ div.content__slate {
 
 .handcraftedBy {
   padding: 2%;
+}
+.handcraftedByDark{
+  padding: 2%;
+  color: white;
 }
