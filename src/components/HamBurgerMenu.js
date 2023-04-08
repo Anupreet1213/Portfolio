@@ -160,7 +160,7 @@ export function HamburgerMenu({ isLightTheme, setIsLightTheme }) {
           <div>
             <i id="toggleSound" class="fa-solid fa-volume-high"></i>
             {/* <FontAwesomeIcon icon="fa-solid fa-volume-high" /> */}
-            Hello
+            {/* Hello */}
           </div>
         </TopContainer>
         <ContentContainer>

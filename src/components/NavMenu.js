@@ -4,12 +4,13 @@ import styled from "styled-components";
 
 const NavMenuContainer = styled.div`
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 `;
 
 const NavList = styled.ul`
-  padding: 0 0.8em;
+  padding: 12em 0.8em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,8 @@ const NavList = styled.ul`
 
 const NavLink = styled(motion.li)`
   font-weight: 600;
-  height: 42px;
+  height: 52px;
+  margin:auto;
   display: flex;
   align-items: center;
   cursor: pointer;

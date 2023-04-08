@@ -179,12 +179,13 @@
 /* -------------------------top mein hi burger wala nav----------------------------- */
 
 /* .hamburgerMenu {
-  
+
+
 } */
+
 
 /* <--------------------------------------------About Me Section------------------------------------------> */
 .aboutMeHeading {
-  /* color: #C60C62; */
   color: hsl(203, 100%, 50%);
   font-family: "Chakra Petch", sans-serif;
 }
