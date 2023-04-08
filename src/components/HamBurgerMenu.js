@@ -55,6 +55,7 @@ export function HamburgerMenu({ isLightTheme, setIsLightTheme }) {
             isOpen={isOpen}
             isLightTheme={isLightTheme}
             setIsLightTheme={setIsLightTheme}
+            setOpen={setOpen}
           />
         </ContentContainer>
       </MenuContainer>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const NavMenuContainer = styled.div`
   width: 100%;
@@ -48,7 +49,7 @@ const variants = {
   },
 };
 
-export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
+export function NavMenu({ setOpen, isOpen, isLightTheme, setIsLightTheme }) {
   const handleTheme = () => {
     const body = document.getElementsByTagName("BODY")[0];
     body.classList.toggle("lightModeBody");
@@ -72,9 +73,23 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+          <Link
+            style={{
+              cursor: "pointer",
+              fontSize: "1.2rem",
+              color: isLightTheme ? "black" : "white",
+            }}
+            to={isLightTheme ? "projects" : "projectsDark"}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
             Projects
-          </a>
+          </Link>
         </NavLink>
         <NavLink
           initial={false}
@@ -90,9 +105,19 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+          <Link
+            style={{ color: isLightTheme ? "black" : "white" }}
+            to={isLightTheme ? "experience" : "experienceDark"}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
             Achievements
-          </a>
+          </Link>
         </NavLink>
         <NavLink
           initial={false}
@@ -108,9 +133,19 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+          <Link
+            style={{ color: isLightTheme ? "black" : "white" }}
+            to="techStackNav"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
             Skills
-          </a>
+          </Link>
         </NavLink>
         <NavLink
           initial={false}
@@ -127,9 +162,19 @@ export function NavMenu({ isOpen, isLightTheme, setIsLightTheme }) {
             },
           }}
         >
-          <a style={{ color: isLightTheme ? "black" : "white" }} href="#">
+          <Link
+            style={{ color: isLightTheme ? "black" : "white" }}
+            to={isLightTheme ? "contactMe" : "contactMeDark"}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
             Socials
-          </a>
+          </Link>
         </NavLink>
       </NavList>
     </NavMenuContainer>
