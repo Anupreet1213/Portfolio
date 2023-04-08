@@ -16,7 +16,7 @@ function App() {
       <Projects isLightTheme={isLightTheme} />
       <Skills />
       <Experience isLightTheme={isLightTheme} />
-      <ContactMe />
+      <ContactMe isLightTheme={isLightTheme} />
     </div>
   );
 }

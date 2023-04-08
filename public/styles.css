@@ -837,6 +837,17 @@ div.content__slate {
   position: relative;
   padding-top: 7%;
 }
+.contactMeDark{
+  background-color: #0d1920;
+  /* background-color: #101111;  */
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Chakra Petch", sans-serif;
+  align-items: center;
+  position: relative;
+  padding-top: 7%;
+}
 .contactMeUpDiv {
   color: white;
   position: absolute;
@@ -881,6 +892,13 @@ div.content__slate {
 .contactMeDescription {
   font-size: 1.6rem;
   /* color:white; */
+  width: 25%;
+  text-align: center;
+  padding: 1%;
+}
+.contactMeDescriptionDark{
+  font-size: 1.6rem;
+  color:white;
   width: 25%;
   text-align: center;
   padding: 1%;
@@ -962,4 +980,8 @@ div.content__slate {
 
 .handcraftedBy {
   padding: 2%;
+}
+.handcraftedByDark{
+  padding: 2%;
+  color: white;
 }
