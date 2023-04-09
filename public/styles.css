@@ -306,6 +306,16 @@
   }
 }
 
+@media screen and (max-width: 540px) {
+  #rightHeading{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  #rightSubDescription{
+    font-size: 1.25rem;
+  }
+}
+
 .rightDescription {
   display: flex;
   flex-direction: column;
@@ -460,6 +470,7 @@
   /* width: 80%; */
   font-size: 1.5rem;
 }
+
 
 /* <--------------------------------------------Background Stars------------------------------------------> */
 
