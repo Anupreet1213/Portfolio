@@ -296,10 +296,10 @@
     font-size: 2rem;
   }
   .rightSubDescription {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
   .rightSubDescription-dark {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
   .leftImageDull {
     width: 60vw !important;
@@ -685,7 +685,7 @@ div.content__slate {
     margin-bottom: 2%;
   }
   .projectsSubHeading {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
