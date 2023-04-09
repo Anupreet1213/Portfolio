@@ -261,6 +261,16 @@
   opacity: 0.7;
 }
 
+@media screen and (max-width:1000px) {
+  .leftImageDull{
+    width: 40vw !important;
+    height: 35vh !important;
+  }
+  #aboutMe{
+    padding: 3% 2% !important;
+  }
+}
+
 @media screen and (max-width: 870px) {
   #aboutMe {
     gap: 4%;
