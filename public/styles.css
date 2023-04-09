@@ -261,12 +261,12 @@
   opacity: 0.7;
 }
 
-@media screen and (max-width:1000px) {
-  .leftImageDull{
+@media screen and (max-width: 1000px) {
+  .leftImageDull {
     width: 40vw !important;
     height: 35vh !important;
   }
-  #aboutMe{
+  #aboutMe {
     padding: 3% 2% !important;
   }
 }
@@ -295,8 +295,11 @@
   #rightHeading {
     font-size: 2rem;
   }
-  #rightSubDescription {
-    font-size: 1.4rem;
+  .rightSubDescription {
+    font-size: 1rem !important;
+  }
+  .rightSubDescription-dark {
+    font-size: 1rem !important;
   }
   .leftImageDull {
     width: 60vw !important;
@@ -307,11 +310,11 @@
 }
 
 @media screen and (max-width: 540px) {
-  #rightHeading{
+  #rightHeading {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  #rightSubDescription{
+  #rightSubDescription {
     font-size: 1.25rem;
   }
 }
@@ -460,17 +463,17 @@
   padding-bottom: 2%;
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
+  color: #4e6bff;
 }
-.projectsHeading:hover {
+/* .projectsHeading:hover {
   color: #233dbf;
-}
+} */
 .projectsSubHeading {
   text-align: center;
   padding-bottom: 2%;
   /* width: 80%; */
   font-size: 1.5rem;
 }
-
 
 /* <--------------------------------------------Background Stars------------------------------------------> */
 
@@ -682,7 +685,7 @@ div.content__slate {
     margin-bottom: 2%;
   }
   .projectsSubHeading {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 
