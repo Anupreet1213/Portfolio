@@ -5,7 +5,7 @@ const PROJECTS_DATA = [
     about:
       "Reclaim Green calculate carboon footprints on individual and industry level. The project uses React for the UI part and Backend is based upon Machine Learning that trains dataset for calculating the carbon emissions. The project uses Firestore database as well to store user data and display their past footprints.  ",
     link: "https://github.com/AmanApT/CEmission",
-    imageUrl: "../images/CEmissionImage.png",
+    imageUrl: "../images/CEmissionImage.webp",
     github: "",
     type: ["project", "open-source", "tools"],
     technologies: [
@@ -63,7 +63,7 @@ const PROJECTS_DATA = [
     about:
       "The website uses React to showcase User Interface. The firm aims to provide quality interior design solutions to client for their homes, offices, restaurants etc. The website is currently in Desktop view mode only (trial purposes).",
     link: "https://amanapt.github.io/InteriorDesign/",
-    imageUrl: "../images/Interior-Design.png",
+    imageUrl: "../images/Interior_Design.webp",
     github: "",
     type: ["project", "open-source", "tools"],
     technologies: ["React", "Tailwind", "Boostrap", "Material UI"],
