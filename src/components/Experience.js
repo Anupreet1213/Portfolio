@@ -33,10 +33,14 @@ const Experience = ({ isLightTheme }) => {
               <span>Since November 2022</span>
             </div>
             <p>
-              I've been working as a freelancer since Nov'22. As a freelancer, I have the flexibility to choose my own clients and projects, which allows me to work on things that I am passionate about. 
+              I've been working as a freelancer since Nov'22. As a freelancer, I
+              have the flexibility to choose my own clients and projects, which
+              allows me to work on things that I am passionate about.
             </p>
             <div class="bottom">
-              <a href="https://www.freelancer.in/u/amanpathak26">Freelance Profile</a>
+              <a href="https://www.freelancer.in/u/Anupreet1AS">
+                Freelance Profile
+              </a>
               {/* <i>- Someone famous</i> */}
             </div>
           </section>
@@ -49,7 +53,10 @@ const Experience = ({ isLightTheme }) => {
               <span>Dec 2022-Feb 2023</span>
             </div>
             <p>
-             Contributed to few projects at VigyaAi. One of them includes Profile Picker that provides a very effective solutions to the corporates for filtering their tonnes of cluttered resumes in just few clicks. 
+              Contributed to few projects at VigyaAi. One of them includes
+              Profile Picker that provides a very effective solutions to the
+              corporates for filtering their tonnes of cluttered resumes in just
+              few clicks.
             </p>
             <div class="bottom">
               <a href="https://www.vigyaai.com/">VigyaAi</a>
@@ -68,10 +75,16 @@ const Experience = ({ isLightTheme }) => {
               <span>Jan 2023</span>
             </div>
             <p>
-              Got a stunning position in the International Hackathon organised by Lablab.ai team. We built Machine Learning Based Project that uses Cohere API. The final product made us land in top 30 of the hackathon.
+              Got a stunning position in the International Hackathon organised
+              by Lablab.ai team. We built Machine Learning Based Project that
+              uses Cohere API. The final product made us land in top 30 of the
+              hackathon.
             </p>
             <div class="bottom">
-              <a href="https://lablab.ai/u/@AmanAp/cld34glda001ade0seyrvzix2"> Certification</a>
+              <a href="https://lablab.ai/u/@Anupreet1213/cld34si0200ctde0slnanv3av">
+                {" "}
+                Certification
+              </a>
               {/* <i>- Someone famous</i> */}
             </div>
           </section>
@@ -84,15 +97,19 @@ const Experience = ({ isLightTheme }) => {
               <span>April 2022</span>
             </div>
             <p>
-              I got the first prize in an event that focused on Web Development. The Event was on intercollege level with more than 100 participants.
+              I got the first prize in an event that focused on Web Development.
+              The Event was on intercollege level with more than 100
+              participants.
             </p>
             <div class="bottom">
-              <a href="https://drive.google.com/file/d/1_nlIGzzrlNOR1WNNfCe9-I4S2wQMEPn_/view?usp=share_link">Certification</a>
+              <a href="https://drive.google.com/file/d/1ohTuPH-WfcIneh2v5FVjkcIse9vhcbYI/view?usp=sharing">
+                Certification
+              </a>
               {/* <i>- Someone famous</i> */}
             </div>
           </section>
         </div>
-        <div data-aos="fade-down" class="row row-1">
+        {/* <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-globe"></i>
             <div class="details">
@@ -100,14 +117,16 @@ const Experience = ({ isLightTheme }) => {
               <span>February 2018</span>
             </div>
             <p>
-              I topped my district in International Reasoning Olympiad and also got 9th State Rank.
+              I topped my district in International Reasoning Olympiad and also
+              got 9th State Rank.
             </p>
             <div class="bottom">
-              <a href="https://drive.google.com/file/d/1_mzkZsVL8DqlML_-oLIKFjRFrZ1vaWUA/view?usp=share_link">Certification</a>
-              {/* <i>- Someone famous</i> */}
+              <a href="https://drive.google.com/file/d/1_mzkZsVL8DqlML_-oLIKFjRFrZ1vaWUA/view?usp=share_link">
+                Certification
+              </a>
             </div>
           </section>
-        </div>
+        </div> */}
       </div>
     </div>
   );

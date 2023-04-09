@@ -475,6 +475,15 @@
   font-size: 1.5rem;
 }
 
+.mb-1:hover {
+  background-color: #005f9a !important;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
 /* <--------------------------------------------Background Stars------------------------------------------> */
 
 #stars-group-1 {

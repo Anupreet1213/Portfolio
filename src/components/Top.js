@@ -28,7 +28,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
       <div id="stars-group-3"></div>
 
       <nav className={isLightTheme ? "navbarLight" : "navbar"} id="navbar">
-        <h2 class="name">Aman Ap</h2>
+        <h2 class="name">Anupreet</h2>
         <div class="navbar-links">
           <Link
             style={{ cursor: "pointer", fontSize: "1.2rem" }}
@@ -87,7 +87,9 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
             onClick={() => setIsPlaying(!isPlaying)}
             id="toggleSound"
             style={{ cursor: "pointer" }}
-            className={ isPlaying? "fa-solid fa-volume-high" : "fa-solid fa-volume-xmark" }
+            className={
+              isPlaying ? "fa-solid fa-volume-high" : "fa-solid fa-volume-xmark"
+            }
           ></i>
           <HamburgerMenu
             isLightTheme={isLightTheme}

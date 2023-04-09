@@ -10,7 +10,7 @@ const AboutMe = ({ isLightTheme, setIsLightTheme }) => {
       />
       <div className="rightDescription">
         <p id="rightHeading" className="rightHeading">
-          Hey, I am Aman. Glad you landed here!!{" "}
+          Hey, I am Anupreet. Glad you landed here!!{" "}
         </p>
         <p
           id="rightSubDescription"

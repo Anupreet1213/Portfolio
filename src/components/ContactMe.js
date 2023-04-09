@@ -32,7 +32,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
         <a
           style={{ textDecoration: "none" }}
           className="letsDoThisButton"
-          href="mailto:amanasstudent@gmail.com"
+          href="mailto:anupreet.2003@gmail.com"
         >
           <div> Let's Do This</div>
         </a>
@@ -48,7 +48,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
 
       <div className="socialLinks">
         <a
-          href="https://twitter.com/Aman__Ap"
+          href="https://twitter.com/Anupreet1213"
           className={isLightTheme ? "socialLinkDiv" : "socialLinkDivDark"}
         >
           <i
@@ -60,7 +60,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
           ></i>
         </a>
         <a
-          href="https://www.linkedin.com/in/aman-pathak-original/"
+          href="https://www.linkedin.com/in/anupreet-srivastava-973013223/"
           className={isLightTheme ? "socialLinkDiv" : "socialLinkDivDark"}
         >
           <i
@@ -72,7 +72,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
           ></i>
         </a>
         <a
-          href="https://www.linkedin.com/in/aman-pathak-original/"
+          href="https://github.com/Anupreet1213"
           className={isLightTheme ? "socialLinkDiv" : "socialLinkDivDark"}
         >
           <i
@@ -84,7 +84,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
           ></i>
         </a>
         <a
-          href="mailto:amanasstudent@gmail.com"
+          href="mailto:anupreet.2003@gmail.com"
           className={isLightTheme ? "socialLinkDiv" : "socialLinkDivDark"}
         >
           <i
@@ -99,7 +99,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
       </div>
 
       <div className={isLightTheme ? "handcraftedBy" : "handcraftedByDark"}>
-        <p>Handcrafted by me © Aman Pathak</p>
+        <p>Handcrafted by me © Anupreet Srivastava</p>
       </div>
     </div>
   );

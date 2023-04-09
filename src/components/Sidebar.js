@@ -128,6 +128,7 @@ const SideBar = ({
                             backgroundColor: "rgb(105, 104, 105)",
                             color: "#fff",
                             margin: "2px",
+                            transition: "1s ease",
                           }}
                           key={index}
                           className="b-block mb-1"
@@ -137,7 +138,7 @@ const SideBar = ({
                       ))}
                     </p>
                   )}
-                  {data.link && (
+                  {/* {data.link && (
                     <>
                       <h4>
                         <svg
@@ -160,7 +161,7 @@ const SideBar = ({
                         </a>
                       </p>
                     </>
-                  )}
+                  )} */}
                   {data.github && (
                     <>
                       <h4>
