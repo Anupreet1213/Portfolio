@@ -48,7 +48,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
 
       <div className="socialLinks">
         <a
-          href="https://twitter.com/Anupreet1213"
+          href="https://twitter.com/AnupreetSrivas2"
           className={isLightTheme ? "socialLinkDiv" : "socialLinkDivDark"}
         >
           <i
