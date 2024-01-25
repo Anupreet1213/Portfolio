@@ -21,7 +21,7 @@ const Experience = ({ isLightTheme }) => {
 
       <div class="wrapper">
         <div class="center-line">
-          <a href="#" class="scroll-icon">
+          <a href="#navbar" className="scroll-icon">
             <i class="fas fa-caret-up"></i>
           </a>
         </div>

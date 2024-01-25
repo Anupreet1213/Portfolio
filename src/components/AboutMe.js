@@ -6,7 +6,7 @@ const AboutMe = ({ isLightTheme, setIsLightTheme }) => {
       <img
         className={isLightTheme ? "leftImageDull" : "leftImage"}
         src="images/3d-illustration-hand-and-code-png-removebg-preview.png"
-        alt="Left Image"
+        alt="Left part"
       />
       <div className="rightDescription">
         <p id="rightHeading" className="rightHeading">

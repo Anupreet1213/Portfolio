@@ -19,10 +19,10 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
     } else {
       audio.pause();
     }
-  }, [isPlaying]);
+  }, [isPlaying, audio]);
 
   return (
-    <div className={isLightTheme ? "lightModeTop" : "top"}>
+    <div className={isLightTheme ? "lightModeTop" : "top"} id="top">
       <div id="stars-group-1"></div>
       <div id="stars-group-2"></div>
       <div id="stars-group-3"></div>

@@ -3,18 +3,18 @@ import React from "react";
 // import { faTwitter } from "@fortawesome/free-solid-svg-icons";
 
 const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
-  const handleTheme = () => {
-    const contactMe = document.getElementsByClassName("contactMe")[0];
-    contactMe.classList.toggle("contactMeDark");
-    const contactMeDescription = document.getElementsByClassName(
-      "contactMeDescription"
-    )[0];
-    contactMeDescription.toggle("contactMeDescriptionDark");
-    const handcraftedBy = document.getElementsByClassName("handcraftedBy")[0];
-    handcraftedBy.classList.toggle("handcraftedByDark");
+  // const handleTheme = () => {
+  //   const contactMe = document.getElementsByClassName("contactMe")[0];
+  //   contactMe.classList.toggle("contactMeDark");
+  //   const contactMeDescription = document.getElementsByClassName(
+  //     "contactMeDescription"
+  //   )[0];
+  //   contactMeDescription.toggle("contactMeDescriptionDark");
+  //   const handcraftedBy = document.getElementsByClassName("handcraftedBy")[0];
+  //   handcraftedBy.classList.toggle("handcraftedByDark");
 
-    setIsLightTheme(!isLightTheme);
-  };
+  //   setIsLightTheme(!isLightTheme);
+  // };
 
   return (
     <div className={isLightTheme ? "contactMe" : "contactMeDark"}>

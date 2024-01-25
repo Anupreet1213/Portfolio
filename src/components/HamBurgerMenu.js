@@ -14,11 +14,11 @@ export function HamburgerMenu({ isLightTheme, setIsLightTheme }) {
     setOpen(!isOpen);
   };
 
-  const handleTheme = () => {
-    const body = document.getElementsByTagName("BODY")[0];
-    body.classList.toggle("lightModeBody");
-    setIsLightTheme(!isLightTheme);
-  };
+  // const handleTheme = () => {
+  //   const body = document.getElementsByTagName("BODY")[0];
+  //   body.classList.toggle("lightModeBody");
+  //   setIsLightTheme(!isLightTheme);
+  // };
 
   return (
     <HamburgerMenuContainer>
@@ -67,12 +67,12 @@ const HamburgerMenuContainer = styled.div`
   display: flex;
 `;
 
-const HamburgerIcon = styled.div`
-  color: ${({ reverseColor }) => (reverseColor ? "#000" : "#fff")};
-  cursor: pointer;
-  z-index: 99;
-  transition: all 250ms ease-in-out;
-`;
+// const HamburgerIcon = styled.div`
+//   color: ${({ reverseColor }) => (reverseColor ? "#000" : "#fff")};
+//   cursor: pointer;
+//   z-index: 99;
+//   transition: all 250ms ease-in-out;
+// `;
 
 const MenuContainer = styled(motion.div)`
   min-width: 300px;
@@ -94,11 +94,11 @@ const TopContainer = styled.div`
   width: 100%;
 `;
 
-const IconContainer = styled.div`
-  font-size: 16px;
-  color: #555;
-  padding-right: 5px;
-`;
+// const IconContainer = styled.div`
+//   font-size: 16px;
+//   color: #555;
+//   padding-right: 5px;
+// `;
 
 const LoginButton = styled(motion.button)`
   border: 0;

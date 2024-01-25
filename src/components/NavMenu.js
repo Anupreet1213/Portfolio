@@ -50,11 +50,11 @@ const variants = {
 };
 
 export function NavMenu({ setOpen, isOpen, isLightTheme, setIsLightTheme }) {
-  const handleTheme = () => {
-    const body = document.getElementsByTagName("BODY")[0];
-    body.classList.toggle("lightModeBody");
-    setIsLightTheme(!isLightTheme);
-  };
+  // const handleTheme = () => {
+  //   const body = document.getElementsByTagName("BODY")[0];
+  //   body.classList.toggle("lightModeBody");
+  //   setIsLightTheme(!isLightTheme);
+  // };
 
   return (
     <NavMenuContainer className={isLightTheme ? "lightMode" : ""}>

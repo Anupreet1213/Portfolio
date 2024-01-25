@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import SideBar from "./Sidebar";
 import PROJECTS_DATA from "./Project_Data";
 
@@ -19,8 +19,8 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
     <section id={isLightTheme ? "projects" : "projectsDark"}>
       <p class="projectsHeading">Projects</p>
       <div id="stars-group-1"></div>
-        <div id="stars-group-2"></div>
-        <div id="stars-group-3"></div>
+      <div id="stars-group-2"></div>
+      <div id="stars-group-3"></div>
       <p class="projectsSubHeading">
         I've used hundreds of web and mobile apps in different industries and
         verticals. Eventually, I decided that it would be a fun challenge to try
@@ -43,9 +43,9 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
               style={{ background: "url($`{data.imageUrl}`)" }}
             >
               <div id="stars-group-1"></div>
-        <div id="stars-group-2"></div>
-        <div id="stars-group-3"></div>
-              <img src={data.imageUrl} className="cardImage" />
+              <div id="stars-group-2"></div>
+              <div id="stars-group-3"></div>
+              <img src={data.imageUrl} alt="cardImg" className="cardImage" />
               <div class="content__slate">
                 <h3>{data.title}</h3>
                 <p>{data.description}</p>
@@ -61,7 +61,7 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
           </>
         ))}
         <div id="stars-group-1"></div>
-        
+
         <SideBar
           setShow={setShow}
           show={show}
@@ -69,7 +69,6 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
           isLightTheme={isLightTheme}
         />
       </div>
-      
     </section>
   );
 };

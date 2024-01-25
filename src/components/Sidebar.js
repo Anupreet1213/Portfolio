@@ -27,18 +27,20 @@ const defaultProps = {
 const SideBar = ({
   show,
   setShow,
-  closeShow,
   size,
   overlayColor,
   isLightTheme,
   css: styling,
   data,
 }) => {
-  const handleKeyPress = useCallback((e) => {
-    if (e.key === "Escape") {
-      setShow(false);
-    }
-  }, []);
+  const handleKeyPress = useCallback(
+    (e) => {
+      if (e.key === "Escape") {
+        setShow(false);
+      }
+    },
+    [setShow]
+  );
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyPress);
@@ -46,7 +48,7 @@ const SideBar = ({
     return () => {
       window.removeEventListener("keydown", handleKeyPress);
     };
-  }, []);
+  }, [handleKeyPress]);
 
   // if (show === true) {
   //   const skills = document.getElementById("techStack");
@@ -115,7 +117,7 @@ const SideBar = ({
                   <p style={{ paddingBottom: "3%" }} className="te mb-4">
                     {data.description}
                   </p>
-                  <img src={data.imageUrl} />
+                  <img src={data.imageUrl} alt="img" />
                   <h4>About</h4>
                   <p>{data.about}</p>
                   <h4>Technologies</h4>
