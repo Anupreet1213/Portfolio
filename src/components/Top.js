@@ -28,10 +28,11 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
       <div id="stars-group-3"></div>
 
       <nav className={isLightTheme ? "navbarLight" : "navbar"} id="navbar">
-        <h2 class="name">Anupreet</h2>
-        <div class="navbar-links">
+        <h2 className="name">Anupreet</h2>
+        <div className="navbar-links">
           <Link
             style={{ cursor: "pointer", fontSize: "1.2rem" }}
+            className={isLightTheme ? "nav-items-light" : "nav-items"}
             to={isLightTheme ? "projects" : "projectsDark"}
             spy={true}
             smooth={true}
@@ -42,6 +43,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
           </Link>
           <Link
             style={{ cursor: "pointer", fontSize: "1.2rem" }}
+            className={isLightTheme ? "nav-items-light" : "nav-items"}
             to={isLightTheme ? "experience" : "experienceDark"}
             spy={true}
             smooth={true}
@@ -54,6 +56,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
             style={{ cursor: "pointer", fontSize: "1.2rem" }}
             to="techStackNav"
             spy={true}
+            className={isLightTheme ? "nav-items-light" : "nav-items"}
             smooth={true}
             offset={50}
             duration={500}
@@ -65,6 +68,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
             to={isLightTheme ? "contactMe" : "contactMeDark"}
             spy={true}
             smooth={true}
+            className={isLightTheme ? "nav-items-light" : "nav-items"}
             offset={50}
             duration={500}
           >
