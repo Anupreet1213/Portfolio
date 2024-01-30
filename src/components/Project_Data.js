@@ -17,6 +17,17 @@ const PROJECTS_DATA = [
     ],
   },
   {
+    title: "Adest",
+    description: "Adest provide free of cost file conversion service",
+    about:
+      "Adest provide free of cost file conversion service, enabling multiple conversions and compressions at once, saves users significant time and costs.",
+    link: "https://adest.vercel.app/",
+    imageUrl: "../images/adest.webp",
+    github: "https://github.com/AmanApT/adest",
+    type: ["project", "open-source", "tools"],
+    technologies: ["Next JS", "TypeScript", "MUI"],
+  },
+  {
     title: "Profile Picker",
     description: "Pick best profiles in few clicks",
     about:
