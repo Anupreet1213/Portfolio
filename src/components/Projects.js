@@ -30,6 +30,58 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
         {PROJECTS_DATA.map((data) => (
           <>
             <div
+              style={{ background: `${isLightTheme ? "#7AC7F7" : "#1A242C"}` }}
+              className={`project-div ${
+                isLightTheme ? "project-div-light" : "project-div-dark"
+              }`}
+            >
+              <div
+                className="project-div-image"
+                style={{
+                  background: `url(${data.imageUrl})`,
+                  backgroundSize: "cover",
+                }}
+              ></div>
+              <div className="project-div-right">
+                <h1>{data.title}</h1>
+                <p>{data.about}</p>
+                {data.technologies && (
+                  <p className="d-flex flex-wrap">
+                    {data.technologies.map((tech, index) => (
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          backgroundColor: "rgb(105, 104, 105)",
+                          color: "#fff",
+                          margin: "2px",
+                          padding: "4px",
+                          transition: "1s ease",
+                        }}
+                        key={index}
+                        className="b-block mb-1"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </p>
+                )}
+                {/* <FontAwesomeIcon icon="fa-solid fa-book-open" /> */}
+                <p
+                  onClick={() => {
+                    setProjectData(data);
+                    setShow(true);
+                    const skills =
+                      document.getElementsByClassName("techStack")[0];
+                    skills.style.opacity = "0";
+                  }}
+                  className="click-to-open"
+                >
+                  Click to open
+                </p>
+              </div>
+            </div>
+            {/* <div
+
               role="gridcell"
               id="cardHover"
               tabindex="0"
@@ -43,9 +95,9 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
               style={{ background: "url($`{data.imageUrl}`)" }}
             >
               <div id="stars-group-1"></div>
-              <div id="stars-group-2"></div>
-              <div id="stars-group-3"></div>
-              <img src={data.imageUrl} alt="cardImg" className="cardImage" />
+        <div id="stars-group-2"></div>
+        <div id="stars-group-3"></div>
+              <img src={data.imageUrl} className="cardImage" alt="projectImg" />
               <div class="content__slate">
                 <h3>{data.title}</h3>
                 <p>{data.description}</p>
@@ -57,7 +109,7 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
                   ))}
                 </p>
               </div>
-            </div>
+            </div> */}
           </>
         ))}
         <div id="stars-group-1"></div>

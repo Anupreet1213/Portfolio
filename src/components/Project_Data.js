@@ -1,11 +1,12 @@
 const PROJECTS_DATA = [
   {
-    title: "CEmission",
+    title: "Reclaim Green - Carbon Emission Predictor",
     description: "Calculate your carbon emissions",
     about:
       "Reclaim Green calculate carboon footprints on individual and industry level. The project uses React for the UI part and Backend is based upon Machine Learning that trains dataset for calculating the carbon emissions. The project uses Firestore database as well to store user data and display their past footprints.  ",
     link: "https://github.com/AmanApT/CEmission",
-    imageUrl: "../images/CEmissionImage.webp",
+    // imageUrl: "../images/CEmissionImage.webp",
+    imageUrl: "../images/gif2.gif",
     github: "https://github.com/AmanApT/CEmission",
     type: ["project", "open-source", "tools"],
     technologies: [
@@ -17,12 +18,13 @@ const PROJECTS_DATA = [
     ],
   },
   {
-    title: "Adest",
+    title: "Adest - All format converter",
     description: "Adest provide free of cost file conversion service",
     about:
       "Adest provide free of cost file conversion service, enabling multiple conversions and compressions at once, saves users significant time and costs.",
     link: "https://adest.vercel.app/",
-    imageUrl: "../images/adest.webp",
+    // imageUrl: "../images/adest.webp",
+    imageUrl: "../images/gif.gif",
     github: "https://github.com/AmanApT/adest",
     type: ["project", "open-source", "tools"],
     technologies: ["Next JS", "TypeScript", "MUI"],
