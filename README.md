@@ -17,7 +17,7 @@ If you want to run this portfolio locally, follow these steps:
 I'm always open to new opportunities and collaborations. Feel free to reach out to me:
 - Email: anupreet.2003@gmail.com
 - LinkedIn: https://www.linkedin.com/in/anupreet-srivastava-973013223/
-- Twitter: https://twitter.com/AnupreetSrivas2
+- Twitter: https://twitter.com/anupreet_as
 - Portfolio: https://anupreet-portfolio.netlify.app/
 
 😊Thank you for visiting my portfolio! I'm excited about the possibilities of working together on future projects.
