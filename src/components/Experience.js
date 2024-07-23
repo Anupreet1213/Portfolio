@@ -29,6 +29,23 @@ const Experience = ({ isLightTheme }) => {
           <section>
             <i class="icon fas fa-home"></i>
             <div class="details">
+              <span class="title">Frontend Developer Intern @ Siono.ai</span>
+              <span>Since July 2024</span>
+            </div>
+            <p>
+              NextJs developer at Siono.ai, streamlining tech interviews with AI
+              powered vision. Developed the Job Dashboard, a MVP feature, and
+              performing crucial bug fixes.
+            </p>
+            <div class="bottom">
+              <a href="https://www.siono.ai/">Siono.ai</a>
+            </div>
+          </section>
+        </div>
+        <div data-aos="fade-down" class="row row-2">
+          <section>
+            <i class="icon fas fa-home"></i>
+            <div class="details">
               <span class="title">Freelancer</span>
               <span>Since November 2022</span>
             </div>
@@ -45,7 +62,7 @@ const Experience = ({ isLightTheme }) => {
             </div>
           </section>
         </div>
-        <div data-aos="fade-down" class="row row-2">
+        <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-star"></i>
             <div class="details">
@@ -67,7 +84,7 @@ const Experience = ({ isLightTheme }) => {
         <div id="stars-group-1"></div>
         <div id="stars-group-2"></div>
         <div id="stars-group-3"></div>
-        <div data-aos="fade-down" class="row row-1">
+        <div data-aos="fade-down" class="row row-2">
           <section>
             <i class="icon fas fa-rocket"></i>
             <div class="details">
@@ -89,7 +106,7 @@ const Experience = ({ isLightTheme }) => {
             </div>
           </section>
         </div>
-        <div data-aos="fade-down" class="row row-2">
+        <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-globe"></i>
             <div class="details">
