@@ -29,8 +29,25 @@ const Experience = ({ isLightTheme }) => {
           <section>
             <i class="icon fas fa-home"></i>
             <div class="details">
+              <span class="title">
+                Full Stack Developer Trainee @ CodeQuotient
+              </span>
+              <span>Nov 2024 - Feb 2025</span>
+            </div>
+            <p>
+              I successfully completed comprehensive training at CodeQuotient,focusing on the MERN stack(MongoDB,Express.js,React,Node.js) and Data Structures & Algorithms (DSA). This program helped me develop full-stack web development skills and improvemy problem-solving abilities
+            </p>
+            <div class="bottom">
+              <a href="https://codequotient.com/">CodeQuotient</a>
+            </div>
+          </section>
+        </div>
+        <div data-aos="fade-down" class="row row-2">
+          <section>
+            <i class="icon fas fa-home"></i>
+            <div class="details">
               <span class="title">Frontend Developer Intern @ Siono.ai</span>
-              <span>Since July 2024</span>
+              <span>June 2024 - Sep 2024</span>
             </div>
             <p>
               NextJs developer at Siono.ai, streamlining tech interviews with AI
@@ -42,7 +59,7 @@ const Experience = ({ isLightTheme }) => {
             </div>
           </section>
         </div>
-        <div data-aos="fade-down" class="row row-2">
+        <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-home"></i>
             <div class="details">
@@ -62,7 +79,7 @@ const Experience = ({ isLightTheme }) => {
             </div>
           </section>
         </div>
-        <div data-aos="fade-down" class="row row-1">
+        <div data-aos="fade-down" class="row row-2">
           <section>
             <i class="icon fas fa-star"></i>
             <div class="details">
@@ -84,7 +101,7 @@ const Experience = ({ isLightTheme }) => {
         <div id="stars-group-1"></div>
         <div id="stars-group-2"></div>
         <div id="stars-group-3"></div>
-        <div data-aos="fade-down" class="row row-2">
+        <div data-aos="fade-down" class="row row-1">
           <section>
             <i class="icon fas fa-rocket"></i>
             <div class="details">
@@ -106,7 +123,7 @@ const Experience = ({ isLightTheme }) => {
             </div>
           </section>
         </div>
-        <div data-aos="fade-down" class="row row-1">
+        <div data-aos="fade-down" class="row row-2">
           <section>
             <i class="icon fas fa-globe"></i>
             <div class="details">
@@ -122,28 +139,9 @@ const Experience = ({ isLightTheme }) => {
               <a href="https://drive.google.com/file/d/1ohTuPH-WfcIneh2v5FVjkcIse9vhcbYI/view?usp=sharing">
                 Certification
               </a>
-              {/* <i>- Someone famous</i> */}
             </div>
           </section>
         </div>
-        {/* <div data-aos="fade-down" class="row row-1">
-          <section>
-            <i class="icon fas fa-globe"></i>
-            <div class="details">
-              <span class="title">9th State Rank in IRAO</span>
-              <span>February 2018</span>
-            </div>
-            <p>
-              I topped my district in International Reasoning Olympiad and also
-              got 9th State Rank.
-            </p>
-            <div class="bottom">
-              <a href="https://drive.google.com/file/d/1_mzkZsVL8DqlML_-oLIKFjRFrZ1vaWUA/view?usp=share_link">
-                Certification
-              </a>
-            </div>
-          </section>
-        </div> */}
       </div>
     </div>
   );

@@ -1,5 +1,17 @@
 const PROJECTS_DATA = [
   {
+    title: "Runic Vault",
+    description:
+      "A modern ERP platform for buying and selling games with a seamless payment experience.",
+    about:
+      "RunicVault is a gaming marketplace where users can explore, purchase, and manage their favorite games. Built with a powerful backend and dynamic frontend, RunicVault serves as an e-commerce platform for games. Sellers can upload their game listings, while administrators manage the platform, ensuring quality control and security.",
+    link: "https://runic-vault.vercel.app/",
+    imageUrl: "../images/runic-vault.png",
+    github: "https://github.com/Anupreet1213/RunicVault",
+    type: ["project", "open-source", "tools"],
+    technologies: ["React", "Node JS", "Express", "MongoDB", "Stripe"],
+  },
+  {
     title: "Reclaim Green - Carbon Emission Predictor",
     description: "Calculate your carbon emissions",
     about:
@@ -28,58 +40,6 @@ const PROJECTS_DATA = [
     github: "https://github.com/AmanApT/adest",
     type: ["project", "open-source", "tools"],
     technologies: ["Next JS", "TypeScript", "MUI"],
-  },
-  {
-    title: "Profile Picker",
-    description: "Pick best profiles in few clicks",
-    about:
-      "Profile Picker helps the corporates to filter through tons of CVs and resumes and sort the most suitable ones according to their need.",
-    link: "https://github.com/VigyaAi/Profile-picker-",
-    imageUrl: "../images/Profile-Picker.png",
-    github: "https://github.com/VigyaAi/Profile-picker-",
-    type: ["project", "open-source", "tools"],
-    technologies: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Machine Learning",
-      "Cohere API",
-      "Semantic Search",
-    ],
-  },
-  {
-    title: "Spotify-Clone",
-    description: "Music Website made using only HTML, CSS and Javascript",
-    about:
-      "Created a fully functional Music Website using purely front end.The project showcase Advance JavaScript skills and Advance CSS implementation. Currently the website is mainly for desktop view.",
-    link: "https://anupreet1213.github.io/Spotify-Clone/",
-    imageUrl: "../images/Spotify.png",
-    github: "https://github.com/Anupreet1213/Spotify-Clone",
-    type: ["project", "open-source", "tools"],
-    technologies: ["HTML", "CSS", "Javascript"],
-  },
-  {
-    title: "Invoicer",
-    description: "Create simple and beautiful invoices",
-    about:
-      "Invoicer creates beautiful invoices according to the need of client. React based powerful UI not only provides dynamic functionalities but also provides easy to use experience to the client.",
-    link: "",
-    imageUrl: "../images/Invoicer.png",
-    github: "",
-    type: ["project", "open-source", "tools"],
-    technologies: ["React", "Material UI"],
-  },
-  {
-    title: "Interior Design",
-    description:
-      "Website made for an interior designing firm for a trial purpose.",
-    about:
-      "The website uses React to showcase User Interface. The firm aims to provide quality interior design solutions to client for their homes, offices, restaurants etc. The website is currently in Desktop view mode only (trial purposes).",
-    link: "https://amanapt.github.io/InteriorDesign/",
-    imageUrl: "../images/Interior_Design.webp",
-    github: "https://github.com/Anupreet1213/InteriorDesign",
-    type: ["project", "open-source", "tools"],
-    technologies: ["React", "Tailwind", "Boostrap", "Material UI"],
   },
 ];
 
